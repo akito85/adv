@@ -9,14 +9,18 @@
 		<p>Don't have an account yet?</p>
 		<a class="sign-up-btn" href="javascript:void(0)">Sign up</a>
 	</form>
-	<div id="sign-up-form">
+
+<!-- show registration form, but only if we didn't submit already -->
+<?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>	
+	<form id="sign-up-form">
 		<div class="logo-copy"></div>
 		<p>Get started.</p>
 		<input placeholder="Name" type="text" name="sign-up-name" id="sign-up-name" required />
 		<input placeholder="Phone" type="text" name="sign-up-phone" id="sign-up-phone" required />
 		<input placeholder="Email Address" type="email" name="sign-up-email" id="sign-up-email" required />
-		<input placeholder="Password" type="password" name="sign-up-password" id="sign-up-password" required />
-		<input placeholder="Password Confirmation" type="password" name="sign-up-password-confirmation" id="sign-up-password-confirmation" required />
-    <button type="button" name="sign-up-submit" id="sign-up-submit">Sign up</button>
-	</div>
+		<input placeholder="Password" type="password" name="sign-up-password" id="sign-up-password" autocomplete="off" required />
+		<input placeholder="Password Confirmation" type="password" name="sign-up-password-confirmation" id="sign-up-password-confirmation" autocomplete="off" required />
+    <input type="submit" name="sign-up-submit" id="sign-up-submit" value="Signup">
+	</form>
+<?php } ?>
 </div>

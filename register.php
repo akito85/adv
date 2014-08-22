@@ -25,4 +25,4 @@ require_once('system/login/classes/Registration.php');
 $registration = new Registration();
 
 // showing the register view (with the registration form, and messages/errors)
-include("system/login/views/register.php");
+//include("system/login/views/register.php");
