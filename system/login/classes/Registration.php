@@ -40,7 +40,7 @@ class Registration
 
         // if we have such a POST request, call the registerNewUser() method
         if (isset($_POST["register"])) {
-            $this->registerNewUser($_POST['user_name'], $_POST['user_email'], $_POST['user_password_new'], $_POST['user_password_repeat'],$_POST['phone'], $_POST["captcha"]);
+            $this->registerNewUser($_POST['user_name'],$_POST['user_phone'], $_POST['user_email'], $_POST['user_password_new'], $_POST['user_password_repeat']);
         // if we have such a GET request, call the verifyNewUser() method
         } else if (isset($_GET["id"]) && isset($_GET["verification_code"])) {
             $this->verifyNewUser($_GET["id"], $_GET["verification_code"]);
@@ -78,7 +78,7 @@ class Registration
      * handles the entire registration process. checks all error possibilities, and creates a new user in the database if
      * everything is fine
      */
-    private function registerNewUser($user_name, $user_email, $user_password, $user_password_repeat, $captcha)
+    private function registerNewUser($user_name, $user_phone, $user_email, $user_password, $user_password_repeat)
     {
         // we just remove extra space on username and email
         $user_name  = trim($user_name);
@@ -86,9 +86,7 @@ class Registration
 
         // check provided data validity
         // TODO: check for "return true" case early, so put this first
-        if (strtolower($captcha) != strtolower($_SESSION['captcha'])) {
-            $this->errors[] = MESSAGE_CAPTCHA_WRONG;
-        } elseif (empty($user_name)) {
+        if (empty($user_name)) {
             $this->errors[] = MESSAGE_USERNAME_EMPTY;
         } elseif (empty($user_password) || empty($user_password_repeat)) {
             $this->errors[] = MESSAGE_PASSWORD_EMPTY;
@@ -110,8 +108,7 @@ class Registration
         // finally if all the above checks are ok
         } else if ($this->databaseConnection()) {
             // check if username or email already exists
-            $query_check_user_name = $this->db_connection->prepare('SELECT user_name, user_email FROM users WHERE user_name=:user_name OR user_email=:user_email');
-            $query_check_user_name->bindValue(':user_name', $user_name, PDO::PARAM_STR);
+            $query_check_user_name = $this->db_connection->prepare('SELECT user_email FROM users WHERE user_email=:user_email');
             $query_check_user_name->bindValue(':user_email', $user_email, PDO::PARAM_STR);
             $query_check_user_name->execute();
             $result = $query_check_user_name->fetchAll();
@@ -120,7 +117,7 @@ class Registration
             // TODO: this is really awful!
             if (count($result) > 0) {
                 for ($i = 0; $i < count($result); $i++) {
-                    $this->errors[] = ($result[$i]['user_name'] == $user_name) ? MESSAGE_USERNAME_EXISTS : MESSAGE_EMAIL_ALREADY_EXISTS;
+                    $this->errors[] = ($result[$i]['user_email'] == $user_email) ? MESSAGE_USERNAME_EXISTS : MESSAGE_EMAIL_ALREADY_EXISTS;
                 }
             } else {
                 // check if we have a constant HASH_COST_FACTOR defined (in config/hashing.php),
@@ -136,8 +133,9 @@ class Registration
                 $user_activation_hash = sha1(uniqid(mt_rand(), true));
 
                 // write new users data into database
-                $query_new_user_insert = $this->db_connection->prepare('INSERT INTO users (user_name, user_password_hash, user_email, user_activation_hash, user_registration_ip, user_registration_datetime) VALUES(:user_name, :user_password_hash, :user_email, :user_activation_hash, :user_registration_ip, now())');
+                $query_new_user_insert = $this->db_connection->prepare('INSERT INTO users (user_name, user_phone, user_password_hash, user_email, user_activation_hash, user_registration_ip, user_registration_datetime) VALUES(:user_name, :user_phone, :user_password_hash, :user_email, :user_activation_hash, :user_registration_ip, now())');
                 $query_new_user_insert->bindValue(':user_name', $user_name, PDO::PARAM_STR);
+                $query_new_user_insert->bindValue(':user_phone', $user_phone, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_password_hash', $user_password_hash, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_email', $user_email, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_activation_hash', $user_activation_hash, PDO::PARAM_STR);
@@ -147,6 +145,7 @@ class Registration
                 // id of new user
                 $user_id = $this->db_connection->lastInsertId();
 
+                /* disabled temporarily
                 if ($query_new_user_insert) {
                     // send a verification email
                     if ($this->sendVerificationEmail($user_id, $user_email, $user_activation_hash)) {
@@ -164,6 +163,7 @@ class Registration
                 } else {
                     $this->errors[] = MESSAGE_REGISTRATION_FAILED;
                 }
+                */
             }
         }
     }
