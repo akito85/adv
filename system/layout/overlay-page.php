@@ -9,14 +9,14 @@
 		<p>Don't have an account yet?</p>
 		<a class="sign-up-btn" href="javascript:void(0)">Sign up</a>
 	</form>
-	<form action="include/login.php" method="POST" id="sign-up-form">
+	<div id="sign-up-form">
 		<div class="logo-copy"></div>
 		<p>Get started.</p>
-		<input placeholder="Name" type="text" name="sign-up-name" id="sign-up-name">
-		<input placeholder="Phone" type="text" name="sign-up-phone" id="sign-up-phone">
-		<input placeholder="Email Address" type="text" name="sign-up-email" id="sign-up-email">
-		<input placeholder="Password" type="password" name="sign-up-password" id="sign-up-password">
-		<input placeholder="Password Confirmation" type="password" name="sign-up-password-confirmation" id="sign-up-password-confirmation">
-		<input type="submit" name="sign-up-submit" id="sign-up-submit" value="Sign up">
-	</form>
+		<input placeholder="Name" type="text" name="sign-up-name" id="sign-up-name" required />
+		<input placeholder="Phone" type="text" name="sign-up-phone" id="sign-up-phone" required />
+		<input placeholder="Email Address" type="email" name="sign-up-email" id="sign-up-email" required />
+		<input placeholder="Password" type="password" name="sign-up-password" id="sign-up-password" required />
+		<input placeholder="Password Confirmation" type="password" name="sign-up-password-confirmation" id="sign-up-password-confirmation" required />
+    <button type="button" name="sign-up-submit" id="sign-up-submit">Sign up</button>
+	</div>
 </div>

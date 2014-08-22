@@ -18,7 +18,7 @@
     <img src="system/login/tools/showCaptcha.php" alt="captcha" />
 
     <label><?php echo WORDING_REGISTRATION_CAPTCHA; ?></label>
-    <input type="text" name="captcha" required />
+    <input type="text" name="captcha" />
 
     <input type="submit" name="register" value="<?php echo WORDING_REGISTER; ?>" />
 </form>
