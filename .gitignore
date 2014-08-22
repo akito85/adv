@@ -7,6 +7,6 @@
 .otf
 .icon
 .ico
-fonts/*
-img/*
-video/*
+assets/fonts/*
+assets/img/*
+assets/video/*

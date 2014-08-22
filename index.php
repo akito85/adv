@@ -35,14 +35,16 @@ require_once('system/login/classes/Login.php');
 $login = new Login();
 
 // ... ask if we are logged in here:
-if ($login->isUserLoggedIn() == true) {
+//if ($login->isUserLoggedIn() == true) {
     // the user is logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are logged in" view.
-     include("system/login/views/logged_in.php");
+    // include("system/login/views/logged_in.php");
     //  include ("views/main.php");
-} else {
+//} else {
     // the user is not logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are not logged in" view.
-     include("system/login/views/not_logged_in.php");
+    // include("system/login/views/not_logged_in.php");
     //  include ("views/main.php");
-}
+//}
+
+include('main.php');
