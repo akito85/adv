@@ -1,0 +1,50 @@
+#sidebar-btn {
+	display: none;
+	width: 160px;
+	opacity: 0.8;
+	position: fixed;
+	top: 126px;
+	left: 32px;
+	z-index: 3;
+	&:hover {
+		opacity: 1;
+	}
+	a {
+		display: block;
+		color: white;
+		padding: 10px 10px 8px 10px;
+		text-align: center;
+	}
+}
+#sidebar {
+	display: none;
+	z-index: 10;
+	position: fixed;
+	top: 164px;
+	left: 32px;
+	width: 160px;
+	background: rgba(16,16,16,1);
+	box-shadow: 0 0 3px rgba(255,255,255,0.5);
+	ul {
+		width: 100%;
+		li {
+			width: 100%;
+			a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 16px;
+				border-bottom: 1px solid rgb(32,32,32);
+				transition: all 0.5s;
+				-moz-transition: all 0.5s;
+			}
+			a:hover {
+				background: rgb(128,128,128);
+				color: white;
+			}
+			&:last-child a {
+				border-bottom: none;
+			}
+		}
+	}
+}

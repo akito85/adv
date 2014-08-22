@@ -1,0 +1,88 @@
+@top-bar-height: 48px;
+@top-bar-top-bot-padding: (@top-bar-height - @font-size) / 2;
+#top-bar {
+	width: 100%;
+	height: @top-bar-height;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: @top-bar-top-bot-padding 49px;
+	font-size: @font-size;
+	z-index: 10;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	.date {
+		float: left;
+		display: inline-block;
+	}
+	.personal-info {
+		display: block;
+		float: right;
+		font-family: "Akko W01 Medium";
+		font-size: 18px;
+		.cart {
+			float: left;
+			border-left: 1px solid black;
+			padding-left: 16px;
+			margin-left: 16px;
+			margin-top: -4px;
+			.badge {
+				font-size: 14px;
+				margin-right: 6px;
+				text-align: center;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				padding: 6px;
+				background-color: rgb(223,89,89);
+				color: white;
+				border-radius: 50px;
+			}
+			.icon-cart {
+				display: inline-block;
+				background-image: url(../img/icon-cart.png);
+				width: 26px;
+				height: 26px;
+				background-size: 100%;
+				background-position: center;
+				margin-bottom: -8px;
+				margin-right: 8px;
+			}
+		}
+		.account-btn {
+			float: left;
+			display: inline-block;
+			font-family: "Akko W01 Medium";
+			.sign-in-btn {
+				background-color: #df5959;
+				color: white;
+				padding: 8px 12px 6px;
+				border-radius: 4px;
+			}
+		}
+	}
+	.account-menu {
+		position: absolute;
+		top: @top-bar-height + 2;
+		right: 186px;
+		display: none;
+		background-color: white;
+		width: 240px;
+		text-align: center;
+		ul {
+			li {
+				a {
+					display: block;
+					padding: 12px 0;
+				}
+				&:hover {
+					background-color: rgb(48,48,48);
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	
+}
