@@ -3,8 +3,8 @@
 	<form id="sign-in-form">
 		<a href="/"><div class="logo-copy"></div></a>
 		<p>Sign in</p>
-		<input placeholder="Email Address" type="text" name="sign-in-email" id="sign-in-email">
-		<input placeholder="Password" type="text" name="sign-in-password" id="sign-in-password">
+		<input placeholder="Email Address" type="email" name="sign-in-email" id="sign-in-email" required />
+		<input placeholder="Password" type="text" name="sign-in-password" id="sign-in-password" required />
 		<input type="submit" name="sign-in-submit" id="sign-in-submit" value="Login">
 		<p>Don't have an account yet?</p>
 		<a class="sign-up-btn" href="javascript:void(0)">Sign up</a>
