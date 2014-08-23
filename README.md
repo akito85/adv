@@ -1,12 +1,4 @@
-Folder hierarchy:
-Root
---assets
-  --img
-  --fonts
-  --video
-  --css
-  --video
-  --js
---system
-  --layout
-  --login
+**System Folder**
+------------------
+>**assets** `img`,`css`,`js`,`fonts`,`video`
+>**system** `login`,`layout`
