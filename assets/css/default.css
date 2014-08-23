@@ -564,7 +564,7 @@ html[xmlns] .flexslider .slides {
     display: block;
 }
 #news .news-img {
-    background-image: url("../home-prologue.png");
+    background-image: url("../img/home-prologue.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
