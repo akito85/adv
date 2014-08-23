@@ -17,7 +17,7 @@
 /**
  * put database config in general config 
  */
-include("../../../config/db.php")
+include("config/db.php");
 
 /**
  * Configuration for: Cookies
