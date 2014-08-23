@@ -105,7 +105,7 @@ class Login
             if (!isset($_POST['user_rememberme'])) {
                 $_POST['user_rememberme'] = null;
             }
-            $this->loginWithPostData($_POST['user_name'], $_POST['user_password'], $_POST['user_rememberme']);
+            $this->loginWithPostData($_POST['sign-in-email'], $_POST['sign-in-password'], $_POST['user_rememberme']);
         }
 
         // checking if user requested a password reset mail
@@ -157,13 +157,13 @@ class Login
      * TODO: @devplanete This returns two different types. Maybe this is valid, but it feels bad. We should rework this.
      * TODO: @devplanete After some resarch I'm VERY sure that this is not good coding style! Please fix this.
      */
-    private function getUserData($user_name)
+    private function getUserData($user_email)
     {
         // if database connection opened
         if ($this->databaseConnection()) {
             // database query, getting all the info of the selected user
-            $query_user = $this->db_connection->prepare('SELECT * FROM users WHERE user_name = :user_name');
-            $query_user->bindValue(':user_name', $user_name, PDO::PARAM_STR);
+            $query_user = $this->db_connection->prepare('SELECT * FROM users WHERE user_email = :user_email');
+            $query_user->bindValue(':user_email', $user_email, PDO::PARAM_STR);
             $query_user->execute();
             // get result row (as an object)
             return $query_user->fetchObject();
