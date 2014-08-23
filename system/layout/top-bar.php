@@ -8,7 +8,15 @@
 	<div class="personal-info">
 		
 		<div class="account-btn">
+		<?php if ($login->isUserLoggedIn() == true) {
+							echo $login->getUsername(); ?> <a class="sign-in-btn" href="index.php?logout">Logout</a>
+		<?php
+						}
+					else {
+			?>
 			<a class="sign-in-btn" href="javascript:void(0)">Sign in</a>
+		<?php } ?>
+
 			<!--<a class="account-btn-menu" href="javascript:void(0)">Account &#9662;</a>-->
 		</div>
 		<div class="cart">

@@ -9,9 +9,10 @@ $(document).ready(function(){
 
   $("#sign-in-form").submit(function(event) {
     $.post("index.php", $("#sign-in-form").serialize() + "&login=Login").done(function(data) {
-      alert(data);
+      //alert(data);
     });
-    $('#sign-in-form')[0].reset();
+    window.location.replace("index.php");
+    //$('#sign-in-form')[0].reset();
     event.preventDefault();
   });
 });
