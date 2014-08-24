@@ -1,0 +1,4 @@
+#Options +FollowSymlinks
+#RewriteEngine on
+#RewriteRule ^home/?$ index.php [NC,L]
+#RewriteRule ^home/?$ index.php?id=home [NC,L]

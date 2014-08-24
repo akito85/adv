@@ -62,13 +62,24 @@ define("COOKIE_SECRET_KEY", "1gp@TMPS{+$78sfpMJFe-92s");
  * It's really recommended to use SMTP!
  *
  */
-define("EMAIL_USE_SMTP", false);
-define("EMAIL_SMTP_HOST", "yourhost");
+define("EMAIL_USE_SMTP", true);
+define("EMAIL_SMTP_HOST", "ssl://smtp.gmail.com");
 define("EMAIL_SMTP_AUTH", true);
-define("EMAIL_SMTP_USERNAME", "yourusername");
-define("EMAIL_SMTP_PASSWORD", "yourpassword");
+define("EMAIL_SMTP_USERNAME", "fonfon.1337@gmail.com");
+define("EMAIL_SMTP_PASSWORD", "fonfon.1337");
 define("EMAIL_SMTP_PORT", 465);
 define("EMAIL_SMTP_ENCRYPTION", "ssl");
+
+/* autodevie config */
+/*
+ *  Username:   autodevie
+ *   Password:   Use the email account’s password.
+ *  Incoming Server:  p3plcpnl0589.prod.phx3.secureserver.net
+ *      IMAP: Port 993
+ *      POP3: Port 995
+ *  Outgoing Server:  p3plcpnl0589.prod.phx3.secureserver.net
+ *      SMTP: Port 465
+ */
 
 /**
  * Configuration for: password reset email data
@@ -84,10 +95,10 @@ define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your p
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://127.0.0.1/php-login-advanced/register.php");
-define("EMAIL_VERIFICATION_FROM", "no-reply@example.com");
-define("EMAIL_VERIFICATION_FROM_NAME", "My Project");
-define("EMAIL_VERIFICATION_SUBJECT", "Account activation for PROJECT XY");
+define("EMAIL_VERIFICATION_URL", "http://localhost/register.php");
+define("EMAIL_VERIFICATION_FROM", "noreply@autodevie.com");
+define("EMAIL_VERIFICATION_FROM_NAME", "noreply");
+define("EMAIL_VERIFICATION_SUBJECT", "Account activation for autodevie.com");
 define("EMAIL_VERIFICATION_CONTENT", "Please click on this link to activate your account:");
 
 /**

@@ -42,8 +42,8 @@ class Registration
         if (isset($_POST["register"])) {
             $this->registerNewUser($_POST['sign-up-name'],$_POST['sign-up-phone'], $_POST['sign-up-email'], $_POST['sign-up-password'], $_POST['sign-up-password-confirmation']);
         // if we have such a GET request, call the verifyNewUser() method
-        } else if (isset($_POST["id"]) && isset($_POST["verification_code"])) {
-            $this->verifyNewUser($_POST["id"], $_POST["verification_code"]);
+        } else if (isset($_GET["id"]) && isset($_GET["verification_code"])) {
+            $this->verifyNewUser($_GET["id"], $_GET["verification_code"]);
         }
     }
 
@@ -147,7 +147,6 @@ class Registration
 
                 echo "registration successfully";
 
-                /* disabled temporarily
                 if ($query_new_user_insert) {
                     // send a verification email
                     if ($this->sendVerificationEmail($user_id, $user_email, $user_activation_hash)) {
@@ -165,7 +164,7 @@ class Registration
                 } else {
                     $this->errors[] = MESSAGE_REGISTRATION_FAILED;
                 }
-                */
+                
             }
         }
     }
@@ -212,8 +211,10 @@ class Registration
 
         if(!$mail->Send()) {
             $this->errors[] = MESSAGE_VERIFICATION_MAIL_NOT_SENT . $mail->ErrorInfo;
+            echo $mail->ErrorInfo;
             return false;
         } else {
+            echo "verification email sent";
             return true;
         }
     }
