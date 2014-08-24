@@ -117,7 +117,8 @@ class Registration
             // TODO: this is really awful!
             if (count($result) > 0) {
                 for ($i = 0; $i < count($result); $i++) {
-                    $this->errors[] = ($result[$i]['user_email'] == $user_email) ? MESSAGE_USERNAME_EXISTS : MESSAGE_EMAIL_ALREADY_EXISTS;
+                    $this->errors[] = ($result[$i]['user_email'] == $user_email) ? MESSAGE_EMAIL_ALREADY_EXISTS : MESSAGE_USERNAME_EXISTS;
+                    var_dump($this->errors);
                 }
             } else {
                 // check if we have a constant HASH_COST_FACTOR defined (in config/hashing.php),
@@ -145,7 +146,7 @@ class Registration
                 // id of new user
                 $user_id = $this->db_connection->lastInsertId();
 
-                echo "registration successfully";
+                echo "registration successfully - ";
 
                 if ($query_new_user_insert) {
                     // send a verification email
