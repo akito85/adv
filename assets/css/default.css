@@ -775,3 +775,7 @@ a {
 .no-scroll {
     overflow: hidden;
 }
+
+#error-message {
+    color: white;
+}

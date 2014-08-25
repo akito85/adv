@@ -2,9 +2,11 @@ $(document).ready(function(){
   // signup
   $("#sign-up-form").submit(function(event) {
     $.post("register.php", $("#sign-up-form").serialize() + "&register=Register").done(function(data) {
-      alert(data);
-      window.location.replace("index.php");
-      location.reload();
+      //alert(data);
+      $("#error-message").html(data);
+      $("#error-message").delay(7000).fadeOut('slow');
+      //window.location.replace("index.php");
+      //location.reload();
     });
     $('#sign-up-form')[0].reset();
     event.preventDefault();
