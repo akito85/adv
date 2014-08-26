@@ -776,6 +776,18 @@ a {
     overflow: hidden;
 }
 
+/* register style */
+
 #error-message {
     color: white;
+}
+
+#sign-up-name:required:valid, 
+#sign-up-phone:required:valid {
+    color: green;
+}
+
+#sign-up-name:required:invalid,
+#sign-up-phone:required:invalid {
+    background: red;
 }
