@@ -4,6 +4,7 @@ $(document).ready(function(){
     $.post("register.php", $("#sign-up-form").serialize() + "&register=Register").done(function(data) {
       //alert(data);
       $("#register-error-message").html(data);
+      $("#register-error-message").delay(0).fadeIn('slow');
       $("#register-error-message").delay(7000).fadeOut('slow');
       //window.location.replace("index.php");
       //location.reload();
@@ -16,8 +17,10 @@ $(document).ready(function(){
   $("#sign-in-form").submit(function(event) {
     $.post("login.php", $("#sign-in-form").serialize() + "&login=Login").done(function(data) {
       $("#login-error-message").html(data);
+      $("#login-error-message").delay(0).fadeIn('slow');
       $("#login-error-message").delay(7000).fadeOut('slow');
         if (data === ""){
+          alert(data);
           window.location.replace("index.php");
           location.reload();
         }
