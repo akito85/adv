@@ -12,3 +12,5 @@ assets/img/*
 assets/video/*
 system/login/config/config.php
 config/db.php
+.config.php
+.db.php
