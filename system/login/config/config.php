@@ -63,10 +63,10 @@ define("COOKIE_SECRET_KEY", "1gp@TMPS{+$78sfpMJFe-92s");
  *
  */
 define("EMAIL_USE_SMTP", true);
-define("EMAIL_SMTP_HOST", "ssl://smtp.gmail.com");
+define("EMAIL_SMTP_HOST", "ssl://p3plcpnl0589.prod.phx3.secureserver.net");
 define("EMAIL_SMTP_AUTH", true);
-define("EMAIL_SMTP_USERNAME", "fonfon.1337@gmail.com");
-define("EMAIL_SMTP_PASSWORD", "fonfon.1337");
+define("EMAIL_SMTP_USERNAME", "noreply@autodevie.com");
+define("EMAIL_SMTP_PASSWORD", "noreply-adv");
 define("EMAIL_SMTP_PORT", 465);
 define("EMAIL_SMTP_ENCRYPTION", "ssl");
 
@@ -95,7 +95,7 @@ define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your p
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://localhost/adv-phase2/adv/verify_and_login.php");
+define("EMAIL_VERIFICATION_URL", "http://localhost/adv/verify_and_login.php");
 define("EMAIL_VERIFICATION_FROM", "noreply@autodevie.com");
 define("EMAIL_VERIFICATION_FROM_NAME", "noreply");
 define("EMAIL_VERIFICATION_SUBJECT", "Account activation for autodevie.com");
