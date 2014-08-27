@@ -243,7 +243,7 @@ class Registration
             if ($query_update_user->rowCount() > 0) {
                 $this->verification_successful = true;
                 $this->messages[] = MESSAGE_REGISTRATION_ACTIVATION_SUCCESSFUL;
-                var_dump($this->messages);
+                //var_dump($this->messages);
             } else {
                 $this->errors[] = MESSAGE_REGISTRATION_ACTIVATION_NOT_SUCCESSFUL;
                 var_dump($this->errors);

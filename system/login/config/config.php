@@ -95,7 +95,7 @@ define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your p
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://localhost/register.php");
+define("EMAIL_VERIFICATION_URL", "http://localhost/adv-phase2/adv/verify_and_login.php");
 define("EMAIL_VERIFICATION_FROM", "noreply@autodevie.com");
 define("EMAIL_VERIFICATION_FROM_NAME", "noreply");
 define("EMAIL_VERIFICATION_SUBJECT", "Account activation for autodevie.com");

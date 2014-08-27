@@ -241,40 +241,36 @@ class Login
      * @param $user_password
      * @param $user_rememberme
      */
-    private function loginWithPostData($user_name, $user_password, $user_rememberme)
+    private function loginWithPostData($user_email, $user_password, $user_rememberme)
     {
-        if (empty($user_name)) {
-            $this->errors[] = MESSAGE_USERNAME_EMPTY;
+        if (empty($user_email)) {
+            $this->errors[] = MESSAGE_EMAIL_EMPTY;
+            echo $this->errors[0];
         } else if (empty($user_password)) {
             $this->errors[] = MESSAGE_PASSWORD_EMPTY;
+            echo $this->errors[0];
 
-        // if POST data (from login form) contains non-empty user_name and non-empty user_password
+        // if POST data (from login form) contains non-empty user_email and non-empty user_password
         } else {
-            // user can login with his username or his email address.
-            // if user has not typed a valid email address, we try to identify him with his user_name
-            if (!filter_var($user_name, FILTER_VALIDATE_EMAIL)) {
-                // database query, getting all the info of the selected user
-                $result_row = $this->getUserData(trim($user_name));
-
             // if user has typed a valid email address, we try to identify him with his user_email
-            } else if ($this->databaseConnection()) {
+            if ($this->databaseConnection()) {
                 // database query, getting all the info of the selected user
                 $query_user = $this->db_connection->prepare('SELECT * FROM users WHERE user_email = :user_email');
-                $query_user->bindValue(':user_email', trim($user_name), PDO::PARAM_STR);
+                $query_user->bindValue(':user_email', trim($user_email), PDO::PARAM_STR);
                 $query_user->execute();
                 // get result row (as an object)
                 $result_row = $query_user->fetchObject();
             }
 
             // if this user not exists
-            if (! isset($result_row->user_id)) {
+            if (!isset($result_row->user_id)) {
                 // was MESSAGE_USER_DOES_NOT_EXIST before, but has changed to MESSAGE_LOGIN_FAILED
                 // to prevent potential attackers showing if the user exists
                 $this->errors[] = MESSAGE_LOGIN_FAILED;
             } else if (($result_row->user_failed_logins >= 3) && ($result_row->user_last_failed_login > (time() - 30))) {
                 $this->errors[] = MESSAGE_PASSWORD_WRONG_3_TIMES;
             // using PHP 5.5's password_verify() function to check if the provided passwords fits to the hash of that user's password
-            } else if (! password_verify($user_password, $result_row->user_password_hash)) {
+            } else if (!password_verify($user_password, $result_row->user_password_hash)) {
                 // increment the failed login counter for that user
                 $sth = $this->db_connection->prepare('UPDATE users '
                         . 'SET user_failed_logins = user_failed_logins+1, user_last_failed_login = :user_last_failed_login '
