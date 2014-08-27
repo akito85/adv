@@ -62,6 +62,7 @@ class Login
     {
         // create/read session
         session_start();
+        session_save_path('tmp/');
 
         // TODO: organize this stuff better and make the constructor very small
         // TODO: unite Login and Registration classes ?
