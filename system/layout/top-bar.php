@@ -9,7 +9,7 @@
 		
 		<div class="account-btn">
 		<?php if ($login->isUserLoggedIn() == true) {
-							$login->getUsername(); ?> <a class="sign-in-btn" href="index.php?logout">Logout</a>
+							echo $login->getUsername(); ?> <a class="sign-in-btn" href="index.php?logout">Logout</a>
 		<?php
 						}
 					else {

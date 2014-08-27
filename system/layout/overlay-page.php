@@ -3,10 +3,11 @@
   <form id="sign-in-form">
     <a href="/"><div class="logo-copy"></div></a>
     <p>Sign in</p>
+    <div class="login-error-message" id="login-error-message"></div>
     <input placeholder="Email Address" type="email" name="sign-in-email" id="sign-in-email" autocomplete="off" required />
     <input placeholder="Password" type="password" name="sign-in-password" id="sign-in-password" autocomplete="off" required />
     <input type="submit" name="sign-in-submit" id="sign-in-submit" value="Login">
-    <p>Don't have an account yet?</p>
+    <p>Dont have an account yet?</p>
     <a class="sign-up-btn" href="javascript:void(0)">Sign up</a>
   </form>
 
@@ -14,7 +15,7 @@
 <?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>  
   <form id="sign-up-form">
     <div class="logo-copy"></div>
-    <div class="error-message" id="error-message"></div>
+    <div class="register-error-message" id="register-error-message"></div>
     <p>Get started.</p>
     <input placeholder="Name" type="text" name="sign-up-name" id="sign-up-name" 
            oninvalid="this.setCustomValidity('Username cannot be empty, only letters and space allowed.')" 

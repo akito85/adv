@@ -3,8 +3,8 @@ $(document).ready(function(){
   $("#sign-up-form").submit(function(event) {
     $.post("register.php", $("#sign-up-form").serialize() + "&register=Register").done(function(data) {
       //alert(data);
-      $("#error-message").html(data);
-      $("#error-message").delay(7000).fadeOut('slow');
+      $("#register-error-message").html(data);
+      $("#register-error-message").delay(7000).fadeOut('slow');
       //window.location.replace("index.php");
       //location.reload();
     });
@@ -14,10 +14,13 @@ $(document).ready(function(){
 
   // signin
   $("#sign-in-form").submit(function(event) {
-    $.post("index.php", $("#sign-in-form").serialize() + "&login=Login").done(function(data) {
-      //alert(data);
-      window.location.replace("index.php");
-      location.reload();
+    $.post("login.php", $("#sign-in-form").serialize() + "&login=Login").done(function(data) {
+      $("#login-error-message").html(data);
+      $("#login-error-message").delay(7000).fadeOut('slow');
+        if (data === ""){
+          window.location.replace("index.php");
+          location.reload();
+        }
     });
     //$('#sign-in-form')[0].reset();
     event.preventDefault();

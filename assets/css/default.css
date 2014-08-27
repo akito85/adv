@@ -778,10 +778,11 @@ a {
 
 /* register style */
 
-#error-message {
+#register-error-message,
+#login-error-message {
     color: white;
 }
-
+/*
 #sign-up-name:required:valid, 
 #sign-up-phone:required:valid {
     color: green;
@@ -791,3 +792,4 @@ a {
 #sign-up-phone:required:invalid {
     background: red;
 }
+*/
