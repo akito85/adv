@@ -7,7 +7,7 @@ require_once("login.php");
 <head>
 	<meta charset="UTF-8">
 	<title>ADV - Auto De Vie</title>
-	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="../assets/css/default.css">
 </head>
 <body>
 	<?php include('system/layout/top-bar.php'); ?>
@@ -49,9 +49,9 @@ require_once("login.php");
 		<h1>Contact Us</h1>
 		<p><a title="Send us an email" href="mailto:autodevie@gmail.com">autodevie@gmail.com</a> | +62.816.899.900</p>
 	</div>
-	<script src="assets/js/jquery-2.1.1.min.js"></script>
-	<script src="assets/js/jquery.flexslider-min.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/ajax.js"></script>
+	<script src="../assets/js/jquery-2.1.1.min.js"></script>
+	<script src="../assets/js/jquery.flexslider-min.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/ajax.js"></script>
 </body>
 </html>

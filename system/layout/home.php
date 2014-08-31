@@ -1,10 +1,10 @@
 <?php include('sidebar.php') ?>
 <div class="background-img">
 	<ul class="slides">
-		<li><img src="assets/img/slideshow/1.jpg" /></li>
-		<li><img src="assets/img/slideshow/2.jpg" /></li>
-		<li><img src="assets/img/slideshow/3.jpg" /></li>
-		<li><img src="assets/img/slideshow/4.jpg" /></li>
+		<li><img src="../assets/img/slideshow/1.jpg" /></li>
+		<li><img src="../assets/img/slideshow/2.jpg" /></li>
+		<li><img src="../assets/img/slideshow/3.jpg" /></li>
+		<li><img src="../assets/img/slideshow/4.jpg" /></li>
 	</ul>
 	<a href="javascript:void(0)" class="go-down-arrow"></a>
 </div>
@@ -46,18 +46,18 @@
 <div class="modal" id="adv-modal-1">
 	<a href="javascript:void(0)" class="modal-close-btn" title="Close"></a>
 	<video class="modal-video" width="100%" height="100%" controls>
-	  <source src="assets/video/adv_grind.mp4" type="video/mp4">
-	  <source src="assets/video/adv_grind.webm" type="video/webm">
-	  <source src="assets/video/adv_grind.ogv" type="video/ogg">
+	  <source src="../assets/video/adv_grind.mp4" type="video/mp4">
+	  <source src="../assets/video/adv_grind.webm" type="video/webm">
+	  <source src="../assets/video/adv_grind.ogv" type="video/ogg">
 		Your browser does not support the video tag.
 	</video>
 </div>
 <div class="modal" id="adv-modal-2">
 	<a href="javascript:void(0)" class="modal-close-btn" title="Close"></a>
 	<video class="modal-video" width="100%" height="100%" controls>
-	  <source src="assets/video/adv_hybrid.mp4" type="video/mp4">
-	  <source src="assets/video/adv_hybrid.webm" type="video/webm">
-	  <source src="assets/video/adv_hybrid.ogv" type="video/ogg">
+	  <source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
+	  <source src="../assets/video/adv_hybrid.webm" type="video/webm">
+	  <source src="../assets/video/adv_hybrid.ogv" type="video/ogg">
 		Your browser does not support the video tag.
 	</video>
 </div>
