@@ -18,12 +18,12 @@ require_once("login.php");
 		<div id="main-nav">
 			<div class="logo-copy"></div>
 			<ul class="left-menu">
-				<li><a href="index.php?id=home">Home</a></li>
-				<li><a href="index.php?id=about">About Us</a></li>
+				<li><a href="home/">Home</a></li>
+				<li><a href="about/">About Us</a></li>
 			</ul>
 			<ul class="right-menu">
-				<li><a href="index.php?id=autoshow">Autoshow</a></li>
-				<li><a href="index.php?id=products">Products</a></li>
+				<li><a href="autoshow/">Autoshow</a></li>
+				<li><a href="products/">Products</a></li>
 			</ul>
 		</div>
 		<?php

@@ -246,10 +246,8 @@ class Login
     {
         if (empty($user_email)) {
             $this->errors[] = MESSAGE_EMAIL_EMPTY;
-            echo $this->errors[0];
         } else if (empty($user_password)) {
             $this->errors[] = MESSAGE_PASSWORD_EMPTY;
-            echo $this->errors[0];
 
         // if POST data (from login form) contains non-empty user_email and non-empty user_password
         } else {
@@ -268,12 +266,9 @@ class Login
                 // was MESSAGE_USER_DOES_NOT_EXIST before, but has changed to MESSAGE_LOGIN_FAILED
                 // to prevent potential attackers showing if the user exists
                 $this->errors[] = MESSAGE_LOGIN_FAILED;
-                echo "$this->erorrs[0]";
-                var_dump($this->errors);
             }
               else if (!isset($result_row->user_email)) {
                 $this->errors[] = MESSAGE_LOGIN_FAILED;
-                echo $this->errors[0];
             } else if (($result_row->user_failed_logins >= 3) && ($result_row->user_last_failed_login > (time() - 30))) {
                 $this->errors[] = MESSAGE_PASSWORD_WRONG_3_TIMES;
             // using PHP 5.5's password_verify() function to check if the provided passwords fits to the hash of that user's password
@@ -284,12 +279,9 @@ class Login
                         . 'WHERE user_name = :user_name OR user_email = :user_name');
                 $sth->execute(array(':user_name' => $user_name, ':user_last_failed_login' => time()));
                 $this->errors[] = MESSAGE_PASSWORD_WRONG;
-                echo $this->errors[0];
-
             // has the user activated their account with the verification email
             } else if ($result_row->user_active != 1) {
                 $this->errors[] = MESSAGE_ACCOUNT_NOT_ACTIVATED;
-                var_dump($this->errors);
             } else {
                 // write user data into PHP SESSION [a file on your server]
                 $_SESSION['user_id'] = $result_row->user_id;
