@@ -107,3 +107,16 @@ $('.modal-close-btn').on('click', function(){
 	$('video')[0].pause();
 	$('video')[1].pause();
 });
+
+$(document).ready(function(){
+	var footerHeight = $('.adv-footer').height();
+	$('.adv-footer').css({marginBottom: 0 - footerHeight}, 'fast');
+	$('.contact-btn').on('click', function(){
+		if($('.adv-footer').css('marginBottom') == '0px') {
+			$('.adv-footer').animate({marginBottom: 0 - footerHeight}, 'fast');
+		}
+		else {
+			$('.adv-footer').animate({marginBottom: '0px'}, 'fast');
+		}
+	});
+});
