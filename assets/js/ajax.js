@@ -16,12 +16,12 @@ $(document).ready(function(){
   // signin
   $("#sign-in-form").submit(function(event) {
     $.post("login.php", $("#sign-in-form").serialize() + "&login=Login").done(function(data) {
-      alert(data);
+      //alert(data);
       $("#login-error-message").html(data);
       $("#login-error-message").delay(0).fadeIn('slow');
       $("#login-error-message").delay(7000).fadeOut('slow');
         if (data === ""){
-          alert(data);
+          //alert(data);
           window.location.replace("index.php");
           location.reload();
         }

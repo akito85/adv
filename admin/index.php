@@ -23,8 +23,8 @@
   </svg>
 <div class="container-fluid">
   <div class="row-fluid" id="content">
-    <?php // include "login.php"; ?>
-    <?php include "main.php"; ?>
+    <?php include "login.php"; ?>
+    <?php //include "main.php"; ?>
   </div>
 </div>
 

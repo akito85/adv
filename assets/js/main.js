@@ -22,6 +22,7 @@ $(document).ready(function(){
 		$('#sign-up-form').fadeIn();
 		$('body').addClass('no-scroll');
 		//$('nav').removeClass('navbar-fixed-top');
+		$('nav').addClass('send-to-back');
 		$('.content').addClass('blur');
 	});
 	// Close overlay page when overlay background is clicked
@@ -31,15 +32,13 @@ $(document).ready(function(){
 		$('#sign-up-form').fadeOut();
 		$('body').removeClass('no-scroll');
 		//$('nav').addClass('navbar-fixed-top');
+		$('nav').removeClass('send-to-back');
 		$('.content').removeClass('blur');
 	});
 
 	// contact footer hover
-	$('.adv-footer').hover(
-	  function () { $('.adv-contact').delay(0).fadeIn('slow');}, function () {
-	    $('.adv-contact').delay(0).fadeOut('slow');
-	  }
-	);	
+	$('.adv-footer').on('mouseenter', function () {$('.adv-contact').delay(0).fadeIn('slow')});
+	$('.adv-footer').on('mouseleave', function () {$('.adv-contact').delay(0).fadeOut('slow')});	
 });
 // Modal Behaviour
 $('#modal-trigger-1').on('click', function(){

@@ -28,6 +28,6 @@ RewriteRule ^(home)/?$ index.php?id=$1 [N]
 RewriteRule ^(about)/?$ index.php?id=$1 [N]
 RewriteRule ^(autoshow)/?$ index.php?id=$1 [N]
 RewriteRule ^(products)/?$ index.php?id=$1 [N]
-RewriteRule ^(/index.php) $1?logout [N]
+RewriteRule ^logout/?$ index.php?logout [N]
 RewriteRule ^.*/login\.php login.php [L]
 

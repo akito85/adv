@@ -1,2 +1,2 @@
-<div class="autoshow-content">
+<div class="row autoshow-content">
 </div>

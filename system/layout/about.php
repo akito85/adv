@@ -1,2 +1,2 @@
-<div class="about-content">
+<div class="row about-content">
 </div>
