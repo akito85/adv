@@ -11,55 +11,48 @@
     src: url("../fonts/akko/Akko W01 Medium.ttf") format("truetype");
 }
 
-@media (max-width: 1124px) {
-    .greetings {
-        display: none !important;
-    }
+@media (max-width:767px){
+    .cart { display: block !important;}
 }
-@media (max-width: 910px) {
-    .navbar-brand {
-        width: 160px !important;
-    }
+
+@media (min-width:768px) and (max-width:991px){
     .navbar-nav {
-        font-size: 16px!important;
-        margin-top: 30px !important;
+        margin: 0 -15px !important; /* fix disorder by akito */
+        white-space: nowrap !important;
     }
+
+    .cart { display: block !important;}
 }
-@media (max-width: 767px) {
-    .navbar-toggle {
-        margin-top: 32px !important;
-    }
-    .navbar-brand {
-        width: 220px !important;
-        display: block !important;
-    }
+
+@media (min-width:992px) and (max-width:1199px){
     .navbar-nav {
-        font-size: 24px !important;
+        margin: 0 -15px !important; /* fix disorder by akito */
+        white-space: nowrap !important;
     }
-    .navbar-nav li {
-        display: block !important;
-        text-align: center !important;
-        margin: 0 !important;
-    }
-    .navbar-nav li a {
-        margin: 0 !important;
-    }
-    .cart {
-        display: block !important;
-        margin: 16px !important;
-        float: none !important;
-        text-align: center;
-    }
-    .auto-de-vie {
-        display: none !important;
-    }
-    .adv-contact li {
-        border: none !important;
-        margin: 0 0 16px 0 !important;
-        padding: 0 !important;
-        display: block !important;
-        text-align: center !important;
-    }
+
+    .cart { display: block !important; background-color: #00ffcc !important; z-index: 1044 !important;}
+}
+
+@media (min-width:1200px){
+
+}
+
+div, input, a {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    box-sizing: border-box;
+    font-family: "Akko W01 Light";
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    outline: none;
 }
 
 nav, footer {
@@ -77,23 +70,25 @@ nav, footer {
 .adv-box {
     height: 400px;
 }
-.navbar-brand {
-    background: url(../img/logo-copy.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 260px;
-    height: 100px;
-}
+
+.navbar, .navbar-brand { min-height: 160px; }
+.navbar-brand img { min-height: 70px; margin: 30px 0 0 0; }
+
 .navbar-nav {
-    margin-top: 36px;
+    top: 70px;
+    margin-left: -20px;
     font-family: 'SteelfishRg';
-    font-size: 22px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    white-space: nowrap;
+    position: relative;
 }
-.navbar-nav > li {
-    border-right: 1px solid rgba(255,255,255,0.5);
+.right-line {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    height: 22px;
+    margin-top: 10px;
+    padding-top: 0px !important;
 }
 .navbar-nav > li:last-child {
     border-right: none;
@@ -117,11 +112,8 @@ nav, footer {
     text-shadow: 1px 1px 1px black;
 }
 .cart {
-    display: inline-block;
-    float: right;
-    margin: 10px;
-    color: white;
-    font-size: 16px;
+    top: 70px;
+    position: relative;
 }
 .cart a {
     color: white;
@@ -134,6 +126,8 @@ nav, footer {
     padding-right: 24px;
     border-right: 1px solid white;
     margin-right: 24px;
+    font-family: "Akko W01 Light";
+    font-size: 14px;
 }
 .badge {
     font-size: 14px;
@@ -907,21 +901,7 @@ html[xmlns] .flexslider .slides {
     margin-top: 49px;
     width: 100%;
 }
-div, input, a {
-    box-sizing: border-box;
-}
-body {
-    background-color: #000;
-    box-sizing: border-box;
-    font-family: "Akko W01 Light";
-    overflow-x: hidden;
-    width: 100%;
-}
-a {
-    color: #000;
-    text-decoration: none;
-    outline: none;
-}
+
 .background-img {
     display: block;
     overflow: hidden;
