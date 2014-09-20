@@ -62,7 +62,7 @@ nav, footer {
     background-position: center;
 }
 .content {
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
 .send-to-back { z-index: 0 !important;}
@@ -95,10 +95,16 @@ nav, footer {
 }
 .navbar-nav > li.active > a {
     background-color: transparent !important;
+    color: rgb(196, 22, 28) !important;
 }
 .navbar-nav > li > a {
     padding: 10px 20px;
 }
+
+.navbar-inverse .navbar-nav>li>a {
+color: #fff;
+}
+
 .adv-red-btn {
     background: rgb(98,11,14); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(98,11,14,1) 0%, rgba(196,22,28,1) 50%, rgba(98,11,14,1) 100%); /* FF3.6+ */
@@ -112,8 +118,11 @@ nav, footer {
     text-shadow: 1px 1px 1px black;
 }
 .cart {
-    top: 70px;
-    position: relative;
+    height: 22px;
+    margin-top: 10px;
+    padding-top: 0px !important;
+    font-family: "Akko W01 Light";
+    font-size: 14px;    
 }
 .cart a {
     color: white;
@@ -122,12 +131,14 @@ nav, footer {
     text-decoration: none;
 }
 .greetings {
-    display: inline-block;
-    padding-right: 24px;
     border-right: 1px solid white;
-    margin-right: 24px;
     font-family: "Akko W01 Light";
     font-size: 14px;
+    color: #fff !important;
+    height: 15px;
+    margin-top: 11px;
+    padding-top: 0px !important;
+    width: 155px;    
 }
 .badge {
     font-size: 14px;
@@ -141,6 +152,9 @@ nav, footer {
     color: white;
     border-radius: 50px;
     text-shadow: 1px 1px 1px black;
+    position: relative;
+    top: -5px;
+    left: -5px;
 }
 .icon-cart {
     display: inline-block;
@@ -151,6 +165,8 @@ nav, footer {
     background-position: center;
     margin-bottom: -8px;
     margin-right: 8px;
+    top: -5px;
+    position: relative;
 }
 .adv-footer {
     position: fixed;
