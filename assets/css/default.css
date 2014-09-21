@@ -12,25 +12,19 @@
 }
 
 @media (max-width:767px){
-    .cart { display: block !important;}
+
 }
 
 @media (min-width:768px) and (max-width:991px){
-    .navbar-nav {
-        margin: 0 -15px !important; /* fix disorder by akito */
-        white-space: nowrap !important;
+    /** lets bootstrap collapse so soon LOL **/
+ 
+    .navbar-collapse .collapse {
+        display: none!important;
     }
-
-    .cart { display: block !important;}
 }
 
 @media (min-width:992px) and (max-width:1199px){
-    .navbar-nav {
-        margin: 0 -15px !important; /* fix disorder by akito */
-        white-space: nowrap !important;
-    }
 
-    .cart { display: block !important; }
 }
 
 @media (min-width:1200px){
@@ -73,12 +67,14 @@ nav, footer {
     height: 400px;
 }
 
+/** header image brand **/
+.navbar-header { margin: 0 30px 0 0; }
 .navbar, .navbar-brand { min-height: 160px; }
 .navbar-brand img { margin: 50px 0 0 50px; width: 198px; min-height: 51px;}
 .navbar-brand { padding: 0;}
 .navbar-nav {
     top: 70px;
-    margin-left: -20px;
+    margin-left: 10px;
     font-family: 'SteelfishRg';
     font-size: 28px;
     text-transform: uppercase;
@@ -86,12 +82,8 @@ nav, footer {
     white-space: nowrap;
     position: relative;
 }
-.right-line {
-    border-right: 2px solid rgba(255, 255, 255);
-    height: 24px;
-    margin-top: 10px;
-    padding-top: 0px !important;
-}
+
+/** navigation **/
 .navbar-nav > li:last-child {
     border-right: none;
 }
@@ -102,9 +94,21 @@ nav, footer {
 .navbar-nav > li > a {
     padding: 10px 20px;
 }
-
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover > .cart-text {
+    color: #777;
+    background-color: transparent;
+    transition: all 0.3s ease-out 0s;
+}
+.right-line {
+    border-right: 2px solid rgb(255, 255, 255);
+    color: rgb(255,255,255);
+    height: 24px;
+    margin-top: 10px;
+    padding-top: 0px !important;
 }
 
 .adv-red-btn {
@@ -122,11 +126,12 @@ nav, footer {
 .cart {
     height: 22px;
     margin-top: 18px;
+    margin-right: 30px;
     padding-top: 0px !important;
     font-family: "Akko W01 Medium";
     font-size: 18px;
     text-transform: none;
-    letter-spacing: 0.5;
+    letter-spacing: 0;
 }
 .cart a {
     color: white;
@@ -134,11 +139,30 @@ nav, footer {
 .cart a:hover {
     text-decoration: none;
 }
+.icon-cart {
+    display: inline-block;
+    background-image: url(../img/icon-cart.png);
+    width: 26px;
+    height: 26px;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    top: -3px;
+}
+.cart-text {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin: 0 0 0 15px;
+    font-size: 24px;
+    color: rgb(255,255,255);
+}
+
 .greetings {
     font-size: 20px;
     text-transform: none;
     letter-spacing: 0;
-    color: #fff !important;
+    color: #fff;
     padding: 0 0 0 0 !important;
     margin-top: 14px;
 }
@@ -171,24 +195,6 @@ nav, footer {
     position: relative;
     top: -12px;
     left: -5px;
-}
-.icon-cart {
-    display: inline-block;
-    background-image: url(../img/icon-cart.png);
-    width: 26px;
-    height: 26px;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-    top: -3px;
-}
-
-.cart-text {
-    display: inline-block;
-    position: relative;
-    top: -10px;
-    margin: 0 10px 0 15px;
-    font-weight: 900;
 }
 
 .adv-footer {
