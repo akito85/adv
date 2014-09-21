@@ -13,25 +13,64 @@
 
 @media (max-width:767px){
     .navbar-nav {
-        overflow: hidden;
+        position: static !important;
+    }
+    .img-footer-logo, .adv-contact-left {
+        margin-top: 20px !important;
+    }
+    .adv-contact-right {
+        margin-left: 35px !important;
+        margin-right: 0 !important;
+    }
+    .navbar-nav .adv-red-btn {
+        padding-left: 4px !important;
+    }
+    .social-instagram {
+        padding-left: 0 !important;
+    }
+    .adv-contact-left, .adv-contact-right {
+        clear: both; !important;
     }
 }
 
 @media (min-width:768px) and (max-width:991px){
     .navbar-nav {
-        overflow: hidden;
         position: static !important;
+    }
+    .greetings {
+        margin-left: 20px !important;
+    }
+    .img-footer-logo, .adv-contact-left, .adv-contact-right {
+        margin-top: 20px !important;
+    }
+    .adv-contact-right {
+        margin-left: 35px !important;
+        margin-right: 0 !important;
+    }
+    .navbar-nav .adv-red-btn {
+        padding-left: 4px !important;
+    }
+    .social-instagram {
+        padding-left: 0 !important;
+    }
+    .adv-contact-left, .adv-contact-right {
+        clear: both !important;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px){
-    .navbar-nav {
-        overflow: hidden;
+    .adv-contact-right {
+    clear: both !important;
+    float: left !important;
+    margin-top: 0px !important;
+    margin-left: 30px !important;
     }
 }
 
 @media (min-width:1200px){
-
+    .adv-contact-right {
+        margin-right: 20px !important;
+    }
 }
 
 div, input, a {
@@ -62,6 +101,7 @@ nav, footer {
 }
 .content {
     margin-top: 160px;
+    margin-bottom: 160px;
 }
 
 .send-to-back { z-index: 0 !important;}
@@ -71,8 +111,6 @@ nav, footer {
 .img-footer-logo { margin: 70px 0 0 50px; width: 221px; min-height: 25px; }
 
 .footer-brand { display: block; }
-
-.navbar-header { margin: 0 30px 0 0; }
 
 .navbar, .navbar-brand { min-height: 160px; }
 .navbar-brand { padding: 0;}
@@ -205,7 +243,7 @@ nav, footer {
 
 .collapsed-footer {
     display: none;
-    height: 160px;
+    min-height: 160px;
 }
 
 .adv-footer-height {
@@ -214,6 +252,7 @@ nav, footer {
 
 .adv-footer {
     position: fixed;
+    z-index: 1099;
     bottom: 0;
     width: 100%;
     background-color: #000; 
@@ -228,7 +267,7 @@ nav, footer {
     padding: 0 !important;
     position: relative;
     top: 0;
-    margin: 58px 0 0 0;
+    margin: 58px 0 0 35px;
 }
 
 .adv-contact-right { 
@@ -249,6 +288,10 @@ nav, footer {
     font-family: "SteelfishRg";
     font-size: 28px;
     text-transform: uppercase;
+}
+
+.adv-contact-left > li > a > p {
+    color: #777;
 }
 
 .adv-contact-left > li > a {
@@ -283,13 +326,15 @@ nav, footer {
 .contact-btn {
     display: inline-block;
     text-align: center;
-    padding: 12px 12px 8px 12px;
+    padding: 0 10px 0 10px;
     text-transform: uppercase;
     text-decoration: none !important;
     position: absolute;
-    top: -40px;
+    top: -34px;
     left: 50%;
     margin-left: -50px;
+    font-family: "SteelfishRg";
+    font-size: 24px;
 }
 .auto-de-vie {
     background-image: url(../img/auto-de-vie.png);

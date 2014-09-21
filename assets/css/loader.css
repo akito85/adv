@@ -56,7 +56,7 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 
-  max-width: 190px;
+  max-width: 290px;
   position: fixed;
   z-index: 2000;
   display: block;
@@ -64,7 +64,7 @@
   left: 3px;
   top: 3px;
   height: 15px;
-  font-size: 12px;
+  font-size: 24px;
   background: #ececec;
   color: #ececec;
   line-height: 60px;

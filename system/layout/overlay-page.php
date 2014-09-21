@@ -2,7 +2,7 @@
   <div class="overlay-background"></div>
   <form id="sign-in-form">
     <a href="/"><div class="logo-copy"></div></a>
-    <p>Sign in</p>
+    <br>
     <div class="login-error-message" id="login-error-message"></div>
     <input placeholder="Email Address" type="email" name="sign-in-email" id="sign-in-email" autocomplete="off" required />
     <input placeholder="Password" type="password" name="sign-in-password" id="sign-in-password" autocomplete="off" required />
@@ -15,6 +15,7 @@
 <?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>  
   <form id="sign-up-form">
     <div class="logo-copy"></div>
+    <br>
     <div class="register-error-message" id="register-error-message"></div>
     <p>Get started.</p>
     <input placeholder="Name" type="text" name="sign-up-name" id="sign-up-name" 

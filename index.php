@@ -1,6 +1,13 @@
 <?php
 //lol this not gonna hurt!!
 require_once("login.php");
+
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+if (false !== strpos($url,'logout')) {
+	header("Location: ../home/");
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
