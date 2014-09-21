@@ -30,7 +30,7 @@
         white-space: nowrap !important;
     }
 
-    .cart { display: block !important; background-color: #00ffcc !important; z-index: 1044 !important;}
+    .cart { display: block !important; }
 }
 
 @media (min-width:1200px){
@@ -55,6 +55,8 @@ a {
     outline: none;
 }
 
+a:focus {outline: none;}
+
 nav, footer {
     background-image: url(../img/adv-header.jpg);
     background-repeat; no-repeat;
@@ -78,15 +80,15 @@ nav, footer {
     top: 70px;
     margin-left: -20px;
     font-family: 'SteelfishRg';
-    font-size: 24px;
+    font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 1px;
     white-space: nowrap;
     position: relative;
 }
 .right-line {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    height: 22px;
+    border-right: 2px solid rgba(255, 255, 255);
+    height: 24px;
     margin-top: 10px;
     padding-top: 0px !important;
 }
@@ -101,8 +103,8 @@ nav, footer {
     padding: 10px 20px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-color: #fff;
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
 }
 
 .adv-red-btn {
@@ -119,10 +121,12 @@ color: #fff;
 }
 .cart {
     height: 22px;
-    margin-top: 10px;
+    margin-top: 18px;
     padding-top: 0px !important;
-    font-family: "Akko W01 Light";
-    font-size: 14px;    
+    font-family: "Akko W01 Medium";
+    font-size: 18px;
+    text-transform: none;
+    letter-spacing: 0.5;
 }
 .cart a {
     color: white;
@@ -131,15 +135,27 @@ color: #fff;
     text-decoration: none;
 }
 .greetings {
-    border-right: 1px solid white;
-    font-family: "Akko W01 Light";
-    font-size: 14px;
+    font-size: 20px;
+    text-transform: none;
+    letter-spacing: 0;
     color: #fff !important;
-    height: 15px;
-    margin-top: 11px;
-    padding-top: 0px !important;
-    width: 155px;    
+    padding: 0 0 0 0 !important;
+    margin-top: 14px;
 }
+
+.greetings-acc-name {
+    font-family: "Akko W01 Medium";
+    display: inline-block;
+    border-right: 1px solid white;
+    padding: 0 10px 0 10px !important;
+}
+
+.greetings-welcome {
+    font-family: "Akko W01 Light";
+    display: inline-block;
+}
+
+
 .badge {
     font-size: 14px;
     margin-right: 6px;
@@ -153,7 +169,7 @@ color: #fff;
     border-radius: 50px;
     text-shadow: 1px 1px 1px black;
     position: relative;
-    top: -5px;
+    top: -12px;
     left: -5px;
 }
 .icon-cart {
@@ -163,11 +179,18 @@ color: #fff;
     height: 26px;
     background-size: 100%;
     background-position: center;
-    margin-bottom: -8px;
-    margin-right: 8px;
-    top: -5px;
     position: relative;
+    top: -3px;
 }
+
+.cart-text {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin: 0 10px 0 15px;
+    font-weight: 900;
+}
+
 .adv-footer {
     position: fixed;
     bottom: 0;

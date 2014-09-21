@@ -30,8 +30,8 @@
 
       <ul class="nav navbar-nav navbar-right">
         <?php if ($login->isUserLoggedIn() == true) { ?>
-          <li><a class="greetings" href="#">Welcome, <strong><?php echo $login->getUsername(); ?></strong></a></li>
-          <li><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span>My Cart</a></li>
+          <li><a class="greetings" href="#"><p class="greetings-welcome">Welcome, </p><p class="greetings-acc-name"><?php echo $login->getUsername(); ?></p></a></li>
+          <li><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
         <?php
               }
         ?>

@@ -31,19 +31,5 @@ require_once("login.php");
 	<?php include "system/layout/overlay-page.php" ?>
 	<?php include "system/layout/footer.php"; ?>
 	<?php include "system/layout/script.php"; ?>
-	<script>
-		$(document).ready(function(){
-			var footerHeight = $('.adv-footer').height();
-			$('.adv-footer').css({marginBottom: 0 - footerHeight}, 'fast');
-			$('.contact-btn').on('click', function(){
-				if($('.adv-footer').css('marginBottom') == '0px') {
-					$('.adv-footer').animate({marginBottom: 0 - footerHeight}, 'fast');
-				}
-				else {
-					$('.adv-footer').animate({marginBottom: '0px'}, 'fast');
-				}
-			});
-		});
-	</script>
 </body>
 </html>
