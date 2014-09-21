@@ -2,39 +2,49 @@
   <a href="javascript:void(0)" class="contact-btn adv-red-btn">
     Contact Us
   </a>
-  <ul class="adv-contact">
-    <li>
-      <div class="auto-de-vie"></div>
-    </li>
-    <li>
-      <h1>Contact</h1>
-      <p>+62212958707</p>
-    </li>
-    <li>
-      <a href="mailto:inquiry@autodevie.com">
-        <h1>E-Mail</h1>
-        <p>inquiry@autodevie.com</p>
-      </a>
-    </li>
-    <li>
-      <h1>Headquarters</h1>
-      <p>-6.225303, 106.659537</p>
-    </li>
-    <li>
-      <h1>Line ID</h1>
-      <p>autodevie</p>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <h1>Facebook</h1>
-        <p>Like us on FB</p>
-      </a>
-    </li>
-    <li>
-      <a href="javascript:void(0)">
-        <h1>Instagram</h1>
-        <p>Follow us on IG</p>
-      </a>
-    </li>
-  </ul>
+  <div class="collapsed-footer">
+    <div class="navbar-header">
+      <a class="footer-brand" href="#"><img class="img-footer-logo" src="../assets/img/logo/footer-logo.png"/></a>
+    </div>
+      <ul class="nav adv-contact-left">
+        <li>
+          <a href="#">
+            <h1>Contact</h1>
+            <p>+62212958707</p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:inquiry@autodevie.com">
+            <h1>E-Mail</h1>
+            <p>inquiry@autodevie.com</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h1>Headquarters</h1>
+            <p>-6.225303, 106.659537</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h1>Line ID</h1>
+            <p>autodevie</p>
+          </a>
+        </li>
+      </ul>
+
+
+      <ul class="nav navbar-right adv-contact-right">
+        <li>
+          <a href="javascript:void(0)">
+            <img class="social-facebook" src="../assets/img/social/facebook.png" />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <img class="social-instagram" src="../assets/img/social/instagram.png" />
+          </a>
+        </li>
+      </ul>
+  </div>      
 </footer>

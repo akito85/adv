@@ -1,14 +1,14 @@
 <div class="row">
-			<div class="box-1 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-2 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-3 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-4 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-5 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-6 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-1 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-2 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-3 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-4 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-5 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-			<div class="box-6 adv-box col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-5.jpg" /></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-6.jpg" /></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-2.jpg" /></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-3.jpg" /></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-4.jpg" /></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-1.jpg" /></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"></div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6"></div>
 </div>
