@@ -8,21 +8,23 @@ $(document).ready(function(){
         $('.account-menu').fadeOut();
     });
     $('#sign-in-btn').on('click', function(){
+        $('nav').addClass('send-to-back');
+        $('.adv-footer').addClass('send-to-back');    	
         $('.overlay-page').fadeIn();
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeIn();
         $('body').addClass('no-scroll');
         //$('nav').removeClass('navbar-fixed-top');
-        $('nav').addClass('send-to-back');
         $('.content').addClass('blur');
     });
     $('.sign-up-btn').on('click', function(){
+        $('nav').addClass('send-to-back');
+        $('.adv-footer').addClass('send-to-back');    	
         $('.overlay-page').fadeIn();
         $('#sign-in-form').fadeOut();
         $('#sign-up-form').fadeIn();
         $('body').addClass('no-scroll');
         //$('nav').removeClass('navbar-fixed-top');
-        $('nav').addClass('send-to-back');
         $('.content').addClass('blur');
     });
     // Close overlay page when overlay background is clicked
@@ -33,6 +35,7 @@ $(document).ready(function(){
         $('body').removeClass('no-scroll');
         //$('nav').addClass('navbar-fixed-top');
         $('nav').removeClass('send-to-back');
+        $('.adv-footer').removeClass('send-to-back')
         $('.content').removeClass('blur');
     });
 
