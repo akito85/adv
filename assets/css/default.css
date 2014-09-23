@@ -228,6 +228,16 @@ video {
     display: inline-block;
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: rgb(196, 22, 28);
+}
+
+.dropdown {
+    font-family: "Akko W01 Light";
+    font-size: 14px;
+} 
+
 
 .badge {
     font-size: 14px;
@@ -264,7 +274,7 @@ video {
 
 .box-hover:hover {
     background-color: #777;
-    transition: all 0.3s ease-out 0s
+    transition: all 0.3s ease-out 0s;
 }
 
 .collapsed-footer {
