@@ -30,4 +30,7 @@
     <input type="submit" name="sign-up-submit" id="sign-up-submit" value="Signup">
   </form>
 <?php } ?>
+
+<iframe id="the-map" src="../system/layout/map.html" frameborder="0"></iframe>
+
 </div>

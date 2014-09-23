@@ -48,12 +48,35 @@
 			  </a>
 			</div>			
 		</div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-5.jpg" /></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-6.jpg" /></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-2.jpg" /></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-3.jpg" /></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-4.jpg" /></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img class="img-responsive" src="../assets/img/box-1.jpg" /></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"></div>
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"></div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+				<img class="img-responsive" src="../assets/img/box-5.jpg" />
+			</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+				<img class="img-responsive" src="../assets/img/box-6.jpg" />
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<video preload='metadata' controls>
+				<source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+			<a class="box-hover" href="../products/">
+				<img class="img-responsive" src="../assets/img/box-2.jpg" />
+			</a>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+			<a class="box-hover" href="../products/">
+				<img class="img-responsive" src="../assets/img/box-3.jpg" />
+			</a>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+			<a class="box-hover" href="../products/">
+				<img class="img-responsive" src="../assets/img/box-4.jpg" />
+			</a>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+			<a class="box-hover" href="../products/">
+				<img class="img-responsive" src="../assets/img/box-1.jpg" />
+			</a>
+		</div>
 </div>

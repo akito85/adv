@@ -35,6 +35,7 @@ if (false !== strpos($url,'logout')) {
 			}
 		?>
 	</div> <!-- end container -->
+
 	<?php include "system/layout/overlay-page.php" ?>
 	<?php include "system/layout/footer.php"; ?>
 	<?php include "system/layout/script.php"; ?>

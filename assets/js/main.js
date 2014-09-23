@@ -39,9 +39,23 @@ $(document).ready(function(){
         $('.content').removeClass('blur');
     });
 
+    $('#hq').on('click', function(){
+        $('nav').addClass('send-to-back');
+        $('.adv-footer').addClass('send-to-back');    	
+        $('.overlay-page').fadeIn();
+        $('#sign-up-form').fadeOut();
+        $('#sign-in-form').fadeOut();
+        $('.the-map').fadeIn();
+        $('body').addClass('no-scroll');
+        //$('nav').removeClass('navbar-fixed-top');
+        $('.content').addClass('blur');
+    });
+
+
     // contact footer hover
     $('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').delay(0).fadeIn('slow')});
-    $('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').delay(0).fadeOut('slow')});    
+    $('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').delay(0).fadeOut('slow')});
+  
 });
 // Modal Behaviour
 $('#modal-trigger-1').on('click', function(){

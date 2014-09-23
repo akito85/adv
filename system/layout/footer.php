@@ -20,7 +20,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" id="hq">
             <h1>Headquarters</h1>
             <p>-6.225303, 106.659537</p>
           </a>
