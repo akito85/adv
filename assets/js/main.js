@@ -46,7 +46,7 @@ $(document).ready(function(){
         $('.overlay-page').fadeIn();
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeOut();
-        $('.the-map').fadeIn();
+        $('#the-map').fadeIn();
         $('body').addClass('no-scroll');
         //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
