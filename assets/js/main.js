@@ -52,6 +52,11 @@ $(document).ready(function(){
         $('.content').addClass('blur');
     });
 
+		$('ul.nav li.dropdown').hover(function() {
+		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+		}, function() {
+		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+		});
 
     // contact footer hover
     $('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').delay(0).fadeIn('slow')});
