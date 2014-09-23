@@ -48,6 +48,11 @@
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 				<img class="img-responsive" src="../assets/img/box-6.jpg" />
 		</div>
+		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+			<video class="img-responsive" preload='metadata' controls>
+				<source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
+			</video>
+		</div>
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 			<a class="box-hover" href="../products/">
 				<img class="img-responsive" src="../assets/img/box-2.jpg" />
@@ -57,11 +62,6 @@
 			<a class="box-hover" href="../products/">
 				<img class="img-responsive" src="../assets/img/box-3.jpg" />
 			</a>
-		</div>
-		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
-			<video class="img-responsive" preload='metadata' controls>
-				<source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
-			</video>
 		</div>
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 			<a class="box-hover" href="../products/">
