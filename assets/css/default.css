@@ -543,14 +543,14 @@ video {
 #the-map {
     display: none;
     bottom: 0;
-    height: 55%;
+    height: 65%;
     left: 0;
     margin: 160px auto auto;
     padding: 16px;
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%;    
+    width: 55%;    
 }
 
 .overlay-page {
