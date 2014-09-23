@@ -3,8 +3,7 @@
 			<div id="auto-slider" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
-			    <li data-target="#auto-slider" data-slide-to="0" class="active"></li>
-			    <li data-target="#auto-slider" data-slide-to="1"></li>
+			    <li class="active" data-target="#auto-slider" data-slide-to="1"></li>
 			    <li data-target="#auto-slider" data-slide-to="2"></li>
 			    <li data-target="#auto-slider" data-slide-to="3"></li>
 			    <li data-target="#auto-slider" data-slide-to="4"></li>
@@ -13,11 +12,6 @@
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 			    <div class="item active">
-			      <img src="../assets/img/slideshow/0.png" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
-			    <div class="item">
 			      <img src="../assets/img/slideshow/1.jpg" alt="...">
 			      <div class="carousel-caption">
 			      </div>
@@ -54,11 +48,6 @@
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 				<img class="img-responsive" src="../assets/img/box-6.jpg" />
 		</div>
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<video preload='metadata' controls>
-				<source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
-			</video>
-		</div>
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 			<a class="box-hover" href="../products/">
 				<img class="img-responsive" src="../assets/img/box-2.jpg" />
@@ -68,6 +57,11 @@
 			<a class="box-hover" href="../products/">
 				<img class="img-responsive" src="../assets/img/box-3.jpg" />
 			</a>
+		</div>
+		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+			<video class="img-responsive" preload='metadata' controls>
+				<source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
+			</video>
 		</div>
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 			<a class="box-hover" href="../products/">

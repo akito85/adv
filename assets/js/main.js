@@ -32,6 +32,7 @@ $(document).ready(function(){
         $('.overlay-page').fadeOut();
         $('#sign-in-form').fadeOut();
         $('#sign-up-form').fadeOut();
+        $('#the-map').fadeOut();
         $('body').removeClass('no-scroll');
         //$('nav').addClass('navbar-fixed-top');
         $('nav').removeClass('send-to-back');
