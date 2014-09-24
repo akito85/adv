@@ -33,6 +33,7 @@ $(document).ready(function(){
         $('#sign-in-form').fadeOut();
         $('#sign-up-form').fadeOut();
         $('#the-map').fadeOut();
+        $('#edit-form').fadeOut();
         $('body').removeClass('no-scroll');
         //$('nav').addClass('navbar-fixed-top');
         $('nav').removeClass('send-to-back');
@@ -47,6 +48,19 @@ $(document).ready(function(){
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeOut();
         $('#the-map').fadeIn();
+        $('body').addClass('no-scroll');
+        //$('nav').removeClass('navbar-fixed-top');
+        $('.content').addClass('blur');
+    });
+
+    $('#edit-clicked').on('click', function(){
+        $('nav').addClass('send-to-back');
+        $('.adv-footer').addClass('send-to-back');    	
+        $('.overlay-page').fadeIn();
+        $('#sign-up-form').fadeOut();
+        $('#sign-in-form').fadeOut();
+        $('#the-map').fadeOut();
+        $('#edit-form').fadeIn();
         $('body').addClass('no-scroll');
         //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
