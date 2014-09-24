@@ -12,7 +12,6 @@
 .grid {
 	overflow: hidden;
 	margin: 0;
-	padding: 3em 0 0 0;
 	width: 100%;
 	max-width: 1920px;
 	list-style: none;
@@ -23,11 +22,8 @@
 .grid figure {
 	position: relative;
 	z-index: 1;
-	display: inline-block;
 	overflow: hidden;
-	margin: -0.135em;
-	width: 33.333%;
-	height: 400px;
+	height: auto;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -36,8 +32,8 @@
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
-	opacity: 0.8;
+	max-width: 100%;
+	height: auto !important;
 }
 
 .grid figure figcaption {
@@ -163,8 +159,8 @@ figure.effect-sadie figcaption::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: -webkit-linear-gradient(top, rgba(98,11,14,0) 0%, rgba(196,22,28,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(98,11,14,0) 0%, rgba(196,22,28,0.8) 75%);
 	content: '';
 	opacity: 0;
 	-webkit-transform: translate3d(0,50%,0);
@@ -1129,6 +1125,7 @@ figure.effect-chico:hover p {
 	transform: scale(1);
 }
 
+/** temporarily disabled but i will learn this! **/
 @media screen and (max-width: 69.5em) {
 	.grid figure {
 		width: 50%;
@@ -1139,10 +1136,11 @@ figure.effect-chico:hover p {
 	}
 }
 
-
+/**
 @media screen and (max-width: 41.5em) {
 
 	.grid figure {
 		width: 100%;
 	}
 }
+**/

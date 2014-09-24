@@ -1,5 +1,5 @@
-<div class="row">
-		<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="row grid">
+		<div class="col-lg-6 col-md-8F col-sm-12 col-xs-12">
 			<div id="auto-slider" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
@@ -42,11 +42,16 @@
 			  </a>
 			</div>			
 		</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-				<img class="img-responsive" src="../assets/img/box-5.jpg" />
-			</div>
+		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-roxy">
+			<img src="../assets/img/box-5.jpg" />
+			<figcaption>
+						<h2>Product Name</span></h2>
+						<a href="#">View more</a>
+			</figcaption>			
+		</figure>
+
 		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-				<img class="img-responsive" src="../assets/img/box-6.jpg" />
+				<img class="img img-responsive" src="../assets/img/box-6.jpg" />
 		</div>
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" preload='metadata' controls>
