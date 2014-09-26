@@ -29,4 +29,22 @@ $(document).ready(function(){
     //$('#sign-in-form')[0].reset();
     event.preventDefault();
   });
+
+  // edit
+  $("#edit-form").submit(function(event) {
+    $.post("login.php", $("#edit-form").serialize() + "&edit-submit=Edit").done(function(data) {
+      //alert(data);
+      $("#edit-error-message").html(data);
+      $("#edit-error-message").addClass("bg-success");
+      $("#edit-error-message").delay(0).fadeIn('slow');
+      $("#edit-error-message").delay(7000).fadeOut('slow');
+        if (data === ""){
+          //alert(data);
+          window.location.replace("index.php");
+          location.reload();
+        }
+    });
+    //$('#sign-in-form')[0].reset();
+    event.preventDefault();
+  });
 });

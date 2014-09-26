@@ -34,7 +34,7 @@ require_once('system/login/classes/Login.php');
 // so this single line handles the entire login process.
 $login = new Login();
 
-//echo $login->errors[0];
+echo $login->errors[0];
 
 // ... ask if we are logged in here:
 //if ($login->isUserLoggedIn() == true) {

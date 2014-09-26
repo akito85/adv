@@ -31,6 +31,10 @@
     .adv-contact-left, .adv-contact-right {
         clear: both; !important;
     }
+    .adv-contact-left > li {
+        height: 47px;
+        width: 40% !important;
+    }    
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -333,6 +337,7 @@ video {
 
 .adv-contact-left > li, .adv-contact-right > li {
     display: inline-block;
+    margin: 0 0 15px 0;
 }
 
 .adv-contact-left > li > a > h1 {

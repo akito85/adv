@@ -22,6 +22,11 @@ class Login
      */
     private $user_name = "";
     /**
+     * @var string $user_phone The user's phone
+     */
+    private $user_phone = "";
+
+    /**
      * @var string $user_email The user's mail
      */
     private $user_email = "";
@@ -81,10 +86,11 @@ class Login
         // if user has an active session on the server
         } elseif (!empty($_SESSION['user_name']) && ($_SESSION['user_logged_in'] == 1)) {
             $this->loginWithSessionData();
-
             // checking for form submit from editing screen
             // user try to change his username
-            if (isset($_POST["user_edit_submit_name"])) {
+            if (isset($_POST["edit-submit"])) {
+                $this->editUserProfile($_POST['edit-name'], $_POST['edit-email'], $_POST['edit-phone']);
+            } elseif (isset($_POST["user_edit_submit_name"])) {
                 // function below uses use $_SESSION['user_id'] et $_SESSION['user_email']
                 $this->editUserName($_POST['user_name']);
             // user try to change his email
@@ -181,6 +187,7 @@ class Login
     {
         $this->user_name = $_SESSION['user_name'];
         $this->user_email = $_SESSION['user_email'];
+        $this->user_phone = $_SESSION['user_phone'];
 
         // set logged in status to true, because we just checked for this:
         // !empty($_SESSION['user_name']) && ($_SESSION['user_logged_in'] == 1)
@@ -287,6 +294,7 @@ class Login
                 $_SESSION['user_id'] = $result_row->user_id;
                 $_SESSION['user_name'] = $result_row->user_name;
                 $_SESSION['user_email'] = $result_row->user_email;
+                $_SESSION['user_phone'] = $result_row->user_phone;
                 $_SESSION['user_logged_in'] = 1;
 
                 // declare user id, set the login status to true
@@ -399,6 +407,54 @@ class Login
     {
         return $this->user_is_logged_in;
     }
+
+
+    /**
+     * Edit the user's profile, provided in the editing form
+     */
+    public function editUserProfile($user_name, $user_email, $user_phone)
+    {
+        echo $user_name;
+        // prevent database flooding
+        $user_name = substr(trim($user_name), 0, 64);
+
+        if (!empty($user_name) && $user_name == $_SESSION['user_name']) {
+            $this->errors[] = MESSAGE_USERNAME_SAME_LIKE_OLD_ONE;
+        // username cannot be empty and must be azAZ09 and 2-64 characters
+        // TODO: maybe this pattern should also be implemented in Registration.php (or other way round)
+        } elseif (empty($user_name) || !preg_match("/^(?=.{2,64}$)[a-zA-Z][a-zA-Z0-9]*(?: [a-zA-Z0-9]+)*$/", $user_name)) {
+            $this->errors[] = MESSAGE_USERNAME_INVALID;
+        // user mail cannot be empty and must be in email format
+        } elseif (empty($user_email) || !filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+            $this->errors[] = MESSAGE_EMAIL_INVALID;
+        } elseif (empty($user_phone)) {
+            $this->errors[] = "MESSAGE_PHONE_INVALID";
+        } else {
+            // check if new username already exists
+            $result_row = $this->getUserData($user_name);
+
+            if (isset($result_row->user_id)) {
+                $this->errors[] = MESSAGE_USERNAME_EXISTS;
+            } else {
+                // write user's new data into database
+                $query_edit_user = $this->db_connection->prepare('UPDATE users SET user_name = :user_name, user_phone = :user_phone, user_email = :user_email WHERE user_id = :user_id');
+                $query_edit_user->bindValue(':user_name', $user_name, PDO::PARAM_STR);
+                $query_edit_user->bindValue(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
+                $query_edit_user->bindValue(':user_phone', $user_phone, PDO::PARAM_STR);
+                $query_edit_user->bindValue(':user_email', $user_email, PDO::PARAM_STR);
+                $query_edit_user->execute();
+
+                if ($query_edit_user->rowCount()) {
+                    $_SESSION['user_name'] = $user_name;
+                    $_SESSION['user_email'] = $user_email;
+                    $_SESSION['user_phone'] = $user_phone;
+                    $this->messages[] = "profile edited successfully";
+                } else {
+                    $this->errors[] = "profile change failed";
+                }
+            }
+        }
+    }    
 
     /**
      * Edit the user's name, provided in the editing form

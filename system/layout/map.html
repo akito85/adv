@@ -20,6 +20,7 @@
       var map = null;
       var infoWindow;
       var marker;
+      var contentString;
 
       function initialize() {        
         map = new google.maps.Map(document.getElementById('map-canvas'), 
@@ -27,7 +28,7 @@
             mapTypeCotrolOptions: { style: google.maps.MapTypeControlStyle.DROPDOWN_MENU }
           });
 
-        var contentString = "<p class=\"address\"> ADV </p>";
+        contentString = "<p class=\"address\"> ADV </p>";
 
         infoWindow = new google.maps.InfoWindow({
             content: contentString,
@@ -40,7 +41,7 @@
           title: 'AutoDeVie'
         });
 
-        infoWindow.open(map,marker);
+        //infoWindow.open(map, marker);
       } //-- end initialize --//
 
       google.maps.event.addDomListener(window, 'load', initialize);
@@ -48,12 +49,6 @@
        var center = map.getCenter();
        google.maps.event.trigger(map, "resize");
        map.setCenter(center); 
-      });
-      google.maps.event.addDomListener(marker, 'mouseover', function() {
-          infoWindow.open(map, marker);
-      });
-      google.maps.event.addDomListener(marker, 'mouseout', function() {
-          infoWindow.close();
       });
     </script>
   </head>
