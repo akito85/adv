@@ -42,6 +42,20 @@
     <input type="submit" name="edit-submit" id="edit-submit" value="UPDATE">
   </form>
 
+  <form id="edit-password">
+    <div class="edit-password-error-message" id="edit-password-error-message"></div>
+    <br>
+    <input placeholder="Old Password" type="password" name="edit-old-password" id="edit-old-password" 
+           onchange="form.sing-up-password-confirmation.pattern = this.value;"
+           pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
+    <input placeholder="New Password" type="password" name="edit-new-password" id="edit-new-password" 
+           onchange="form.edit-password-confirmation.pattern = this.value;"
+           pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
+    <input placeholder="Password Confirmation" type="password" name="edit-password-confirmation" id="sign-up-password-confirmation" 
+           pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
+   <input type="submit" name="edit-password-submit" id="edit-password-submit" value="UPDATE">
+  </form>
+
 <iframe id="the-map" src="../system/layout/map.html" frameborder="0"></iframe>
 
 </div>
