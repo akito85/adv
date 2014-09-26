@@ -593,7 +593,7 @@ video {
     height: 100%;
     width: 100%;
 }
-.overlay-page #sign-in-form, .overlay-page #sign-up-form, #edit-form {
+.overlay-page #sign-in-form, .overlay-page #sign-up-form, #edit-form, #edit-password-form {
     bottom: 0;
     display: none;
     height: 280px;
@@ -605,7 +605,7 @@ video {
     top: 0;
     width: 360px;
 }
-.overlay-page #sign-in-form input, .overlay-page #sign-up-form input, #edit-form input {
+.overlay-page #sign-in-form input, .overlay-page #sign-up-form input, #edit-form input, #edit-password-form input {
     border: medium none;
     font-family: "Akko W01 Light";
     font-size: 18px;
@@ -614,12 +614,12 @@ video {
     padding: 16px 14px 12px;
     width: 100%;
 }
-.overlay-page #sign-in-form input[type="submit"], .overlay-page #sign-up-form input[type="submit"], #edit-form input[type="submit"] {
+.overlay-page #sign-in-form input[type="submit"], .overlay-page #sign-up-form input[type="submit"], #edit-form input[type="submit"], #edit-password-form input[type="submit"] {
     background-color: rgb(196, 22, 28);
     color: #fff;
     cursor: pointer;
 }
-.overlay-page #sign-in-form input[type="submit"]:hover, .overlay-page #sign-up-form input[type="submit"]:hover, #edit-form input[type="submit"]:hover {
+.overlay-page #sign-in-form input[type="submit"]:hover, .overlay-page #sign-up-form input[type="submit"]:hover, #edit-form input[type="submit"]:hover, #edit-password-form input[type="submit"]:hover {
     background-color: rgb(196, 22, 28);
     color: #000;
 }

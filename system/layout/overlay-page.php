@@ -42,7 +42,7 @@
     <input type="submit" name="edit-submit" id="edit-submit" value="UPDATE">
   </form>
 
-  <form id="edit-password">
+  <form id="edit-password-form">
     <div class="edit-password-error-message" id="edit-password-error-message"></div>
     <br>
     <input placeholder="Old Password" type="password" name="edit-old-password" id="edit-old-password" 

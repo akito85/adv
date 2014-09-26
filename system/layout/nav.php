@@ -38,7 +38,7 @@
             </a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#" id="edit-clicked">Edit Profile</a></li>
-                <li><a href="#" id="change-pass-clicked">Change Password</a></li>
+                <li><a href="#" id="edit-password-clicked">Change Password</a></li>
                 <li><a href="#">Something else here</a></li>
               </ul>
           </li>

@@ -47,4 +47,26 @@ $(document).ready(function(){
     //$('#sign-in-form')[0].reset();
     event.preventDefault();
   });
+
+  // edit pass
+  $("#edit-password-form").submit(function(event) {
+    $.post("login.php", $("#edit-password-form").serialize() + "&edit-password-submit=EditPassword").done(function(data) {
+      //alert(data);
+      $("#edit-password-error-message").html(data);
+      $("#edit-password-error-message").addClass("bg-success");
+      $("#edit-password-error-message").delay(0).fadeIn('slow');
+      $("#edit-password-error-message").delay(7000).fadeOut('slow');
+        if (data === ""){
+          //alert(data);
+          window.location.replace("index.php");
+          location.reload();
+        }
+    });
+    //$('#sign-in-form')[0].reset();
+    event.preventDefault();
+  });
+
 });
+
+
+
