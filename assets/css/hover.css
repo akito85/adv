@@ -972,7 +972,7 @@ figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
 	padding: 1em;
-	height: 3.75em;
+	height: 3em;
 	color: #fff;
   background-color: #000; 
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,.1), rgba(255,255,255,.1)); 
@@ -987,6 +987,7 @@ figure.effect-zoe figcaption {
 
 figure.effect-zoe h2 {
 	float: left;
+	font-size: 20px;
 }
 
 figure.effect-zoe figcaption > span {
@@ -995,7 +996,7 @@ figure.effect-zoe figcaption > span {
 
 figure.effect-zoe p {
 	position: absolute;
-	bottom: 3.7em;
+	bottom: 3em;
 	padding: 2em;
 	color: #FFF;
 	text-transform: none;
