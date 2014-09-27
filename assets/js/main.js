@@ -1,12 +1,19 @@
 $(document).ready(function(){
-    // dropdown account menu if clicked
-    $('.account-btn-menu').on('click', 'a', function(){
-        $('.account-menu').slideToggle();
+    // Close overlay page when overlay background is clicked
+    $('.overlay-background').on('click', function(){
+        $('.overlay-page').fadeOut();
+        $('#sign-in-form').fadeOut();
+        $('#sign-up-form').fadeOut();
+        $('#the-map').fadeOut();
+        $('#edit-form').fadeOut();
+        $('#edit-password-form').fadeOut();
+        $('body').removeClass('no-scroll');
+        //$('nav').addClass('navbar-fixed-top');
+        $('nav').removeClass('send-to-back');
+        $('.adv-footer').removeClass('send-to-back')
+        $('.content').removeClass('blur');
     });
-    // Close account menu if clicked
-    $('.account-btn-menu').on('click', 'a', function(){
-        $('.account-menu').fadeOut();
-    });
+
     $('#sign-in-btn').on('click', function(){
         $('nav').addClass('send-to-back');
         $('.adv-footer').addClass('send-to-back');    	
@@ -26,20 +33,6 @@ $(document).ready(function(){
         $('body').addClass('no-scroll');
         //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
-    });
-    // Close overlay page when overlay background is clicked
-    $('.overlay-background').on('click', function(){
-        $('.overlay-page').fadeOut();
-        $('#sign-in-form').fadeOut();
-        $('#sign-up-form').fadeOut();
-        $('#the-map').fadeOut();
-        $('#edit-form').fadeOut();
-        $('#edit-password-form').fadeOut();
-        $('body').removeClass('no-scroll');
-        //$('nav').addClass('navbar-fixed-top');
-        $('nav').removeClass('send-to-back');
-        $('.adv-footer').removeClass('send-to-back')
-        $('.content').removeClass('blur');
     });
 
     $('#hq').on('click', function(){
@@ -81,15 +74,15 @@ $(document).ready(function(){
         $('.content').addClass('blur');
     });
 
-		$('ul.nav li.dropdown').hover(function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+		$('.dropdown').hover(function() {
+		  $('.dropdown-menu').stop(true, true).delay(200).fadeIn();
 		}, function() {
-		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
-		});
+		  $('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+		});				
 
     // contact footer hover
-    $('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').delay(0).fadeIn('slow')});
-    $('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').delay(0).fadeOut('slow')});
+    //$('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').stop(true, true).fadeIn('slow')});
+    //$('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').stop(true, true).fadeOut('slow')});
   
 });
 // Modal Behaviour

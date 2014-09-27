@@ -98,9 +98,9 @@ class Login
                 // function below uses use $_SESSION['user_id'] et $_SESSION['user_email']
                 $this->editUserEmail($_POST['user_email']);
             // user try to change his password
-            } elseif (isset($_POST["user_edit_submit_password"])) {
+            } elseif (isset($_POST["edit-password-submit"])) {
                 // function below uses $_SESSION['user_name'] and $_SESSION['user_id']
-                $this->editUserPassword($_POST['user_password_old'], $_POST['user_password_new'], $_POST['user_password_repeat']);
+                $this->editUserPassword($_POST['edit-old-password'], $_POST['edit-new-password'], $_POST['edit-confirmation-password']);
             }
 
         // login with cookie
@@ -164,13 +164,13 @@ class Login
      * TODO: @devplanete This returns two different types. Maybe this is valid, but it feels bad. We should rework this.
      * TODO: @devplanete After some resarch I'm VERY sure that this is not good coding style! Please fix this.
      */
-    private function getUserData($user_email)
+    private function getUserData($user_name)
     {
         // if database connection opened
         if ($this->databaseConnection()) {
             // database query, getting all the info of the selected user
-            $query_user = $this->db_connection->prepare('SELECT * FROM users WHERE user_email = :user_email');
-            $query_user->bindValue(':user_email', $user_email, PDO::PARAM_STR);
+            $query_user = $this->db_connection->prepare('SELECT * FROM users WHERE user_name = :user_name');
+            $query_user->bindValue(':user_name', $user_name, PDO::PARAM_STR);
             $query_user->execute();
             // get result row (as an object)
             return $query_user->fetchObject();

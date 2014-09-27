@@ -49,9 +49,9 @@
            onchange="form.sing-up-password-confirmation.pattern = this.value;"
            pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
     <input placeholder="New Password" type="password" name="edit-new-password" id="edit-new-password" 
-           onchange="form.edit-password-confirmation.pattern = this.value;"
+           onchange="form.edit-confirmation-password.pattern = this.value;"
            pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
-    <input placeholder="Password Confirmation" type="password" name="edit-password-confirmation" id="sign-up-password-confirmation" 
+    <input placeholder="Password Confirmation" type="password" name="edit-confirmation-password" id="edit-confirmation-password" 
            pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
    <input type="submit" name="edit-password-submit" id="edit-password-submit" value="UPDATE">
   </form>

@@ -30,7 +30,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <?php if ($login->isUserLoggedIn() == true) { ?>
-          <li class="dropdown">
+          <li class="dropdown xs-navbar-right">
             <a class="greetings dropdown-toggle" data-toggle="dropdown" href="#">
               <p class="greetings-welcome">Welcome, </p>
               <p class="greetings-acc-name">
@@ -42,7 +42,7 @@
                 <li><a href="#">Something else here</a></li>
               </ul>
           </li>
-          <li><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
+          <li class="xs-navbar-right"><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
         <?php
               }
         ?>

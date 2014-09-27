@@ -33,8 +33,12 @@
     }
     .adv-contact-left > li {
         height: 47px;
-        width: 40% !important;
-    }    
+    }
+    .xs-navbar-right {
+    }
+    .greetings-welcome {
+        padding-left: 20px
+    }
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -225,6 +229,7 @@ video {
     display: inline-block;
     border-right: 1px solid white;
     padding: 0 10px 0 10px !important;
+    height: 15px;
 }
 
 .greetings-welcome {
@@ -256,6 +261,17 @@ video {
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(196, 22, 28);
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     text-decoration: none;
     color: #fff;
     background-color: rgb(196, 22, 28);
@@ -348,10 +364,14 @@ video {
     font-family: "SteelfishRg";
     font-size: 28px;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .adv-contact-left > li > a > p {
     color: #777;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .adv-contact-left > li > a {
