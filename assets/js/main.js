@@ -81,8 +81,8 @@ $(document).ready(function(){
 		});				
 
     // contact footer hover
-    //$('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').stop(true, true).fadeIn('slow')});
-    //$('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').stop(true, true).fadeOut('slow')});
+    $('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').stop(true, true).fadeIn('slow')});
+    $('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').stop(true, true).fadeOut('slow')});
   
 });
 // Modal Behaviour

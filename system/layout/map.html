@@ -14,6 +14,12 @@
       #address {
         width: 200px;
       }
+
+      .scrollFix {
+          line-height: 1.35;
+          overflow: hidden;
+          white-space: nowrap;
+      }      
     </style>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>    
     <script>
@@ -28,7 +34,7 @@
             mapTypeCotrolOptions: { style: google.maps.MapTypeControlStyle.DROPDOWN_MENU }
           });
 
-        contentString = "<p class=\"address\"> ADV </p>";
+        contentString = "<p class=\"scrollFix\" id=\"address\"> ADV </p>";
 
         infoWindow = new google.maps.InfoWindow({
             content: contentString,
@@ -41,7 +47,7 @@
           title: 'AutoDeVie'
         });
 
-        //infoWindow.open(map, marker);
+        infoWindow.open(map, marker);
       } //-- end initialize --//
 
       google.maps.event.addDomListener(window, 'load', initialize);

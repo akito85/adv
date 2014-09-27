@@ -39,7 +39,6 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#" id="edit-clicked">Edit Profile</a></li>
                 <li><a href="#" id="edit-password-clicked">Change Password</a></li>
-                <li><a href="#">Something else here</a></li>
               </ul>
           </li>
           <li class="xs-navbar-right"><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
