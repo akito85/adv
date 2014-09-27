@@ -5,3 +5,4 @@
 <link rel="stylesheet" href="../assets/css/default.css" />
 <link rel="stylesheet" href="../assets/css/loader.css"/>
 <link rel="stylesheet" href="../assets/css/hover.css" />
+<link rel="shortcut icon" href="../assets/img/favicon.ico" />
