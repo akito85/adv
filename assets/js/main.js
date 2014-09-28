@@ -83,7 +83,19 @@ $(document).ready(function(){
     // contact footer hover
     $('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').stop(true, true).fadeIn('slow')});
     $('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').stop(true, true).fadeOut('slow')});
-  
+
+    Pace.start();
+
+	  Pace.on("start", function(){
+	  		//alert("start");
+	      $(".overlay-page").fadeIn();
+	  });
+
+	  Pace.on("done", function(){
+	  		//alert("done");
+	      $(".overlay-page").fadeOut();
+	  });
+
 });
 // Modal Behaviour
 $('#modal-trigger-1').on('click', function(){

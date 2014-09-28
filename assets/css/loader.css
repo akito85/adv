@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "SteelfishRg";
+    src: url("../fonts/steelfish/steelfish rg.otf") format("opentype");
+}
+
 .pace {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -28,8 +33,8 @@
   bottom: 0;
   width: 200px;
   height: 25px;
-  border: 2px solid #ececec;
-  background-color: #fff;
+  border: 2px solid #000;
+  background-color: #000;
 }
 
 .pace .pace-progress {
@@ -56,27 +61,30 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 
-  max-width: 290px;
+  max-width: 190px !important;
   position: fixed;
   z-index: 2000;
-  display: block;
+  display: inline-block;
   position: absolute;
   left: 3px;
   top: 3px;
   height: 15px;
-  font-size: 24px;
-  background: #ececec;
+  font-size: 32px;
+  background: rgb(196, 22, 28);
   color: #ececec;
-  line-height: 60px;
+  line-height: 70px;
   font-weight: bold;
-  font-family:  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:  "SteelfishRg";
 }
 
 .pace .pace-progress:after {
-  content: attr(data-progress-text);
+  text-align: center;
+  width: 200px;
+  content: "LOADING / " attr(data-progress-text);
   display: inline-block;
 }
 
 .pace.pace-inactive {
   display: none;
 }
+
