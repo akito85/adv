@@ -598,7 +598,7 @@ video {
     width: 85%;    
 }
 
-.overlay-page {
+.overlay-page, .overlay-loading {
     bottom: 0;
     display: none;
     height: 100%;
@@ -607,8 +607,15 @@ video {
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 1337;
 }
+
+.overlay-loading-bg {
+    background-color: rgba(0, 0, 0, 0.90);
+    height: 100%;
+    width: 100%;
+}
+
 .overlay-page .overlay-background {
     background-color: rgba(0, 0, 0, 0.75);
     height: 100%;

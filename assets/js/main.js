@@ -8,20 +8,14 @@ $(document).ready(function(){
         $('#edit-form').fadeOut();
         $('#edit-password-form').fadeOut();
         $('body').removeClass('no-scroll');
-        //$('nav').addClass('navbar-fixed-top');
-        $('nav').removeClass('send-to-back');
-        $('.adv-footer').removeClass('send-to-back')
         $('.content').removeClass('blur');
     });
 
-    $('#sign-in-btn').on('click', function(){
-        $('nav').addClass('send-to-back');
-        $('.adv-footer').addClass('send-to-back');    	
+    $('#sign-in-btn').on('click', function(){ 	
         $('.overlay-page').fadeIn();
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeIn();
         $('body').addClass('no-scroll');
-        //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
     });
     $('.sign-up-btn').on('click', function(){
@@ -31,38 +25,29 @@ $(document).ready(function(){
         $('#sign-in-form').fadeOut();
         $('#sign-up-form').fadeIn();
         $('body').addClass('no-scroll');
-        //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
     });
 
-    $('#hq').on('click', function(){
-        $('nav').addClass('send-to-back');
-        $('.adv-footer').addClass('send-to-back');    	
+    $('#hq').on('click', function(){  	
         $('.overlay-page').fadeIn();
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeOut();
         $('#the-map').fadeIn();
         $('body').addClass('no-scroll');
-        //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
     });
 
-    $('#edit-clicked').on('click', function(){
-        $('nav').addClass('send-to-back');
-        $('.adv-footer').addClass('send-to-back');    	
+    $('#edit-clicked').on('click', function(){ 	
         $('.overlay-page').fadeIn();
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeOut();
         $('#the-map').fadeOut();
         $('#edit-form').fadeIn();
         $('body').addClass('no-scroll');
-        //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
     });
 
-    $('#edit-password-clicked').on('click', function(){
-        $('nav').addClass('send-to-back');
-        $('.adv-footer').addClass('send-to-back');    	
+    $('#edit-password-clicked').on('click', function(){   	
         $('.overlay-page').fadeIn();
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeOut();
@@ -70,7 +55,6 @@ $(document).ready(function(){
         $('#edit-form').fadeOut();
         $('#edit-password-form').fadeIn();
         $('body').addClass('no-scroll');
-        //$('nav').removeClass('navbar-fixed-top');
         $('.content').addClass('blur');
     });
 
@@ -83,6 +67,12 @@ $(document).ready(function(){
     // contact footer hover
     $('.adv-footer').on('mouseenter', function () {$('.collapsed-footer').stop(true, true).fadeIn('slow')});
     $('.adv-footer').on('mouseleave', function () {$('.collapsed-footer').stop(true, true).fadeOut('slow')});
+
+    // start on pace start
+    $('.overlay-loading').fadeIn();
+    Pace.on("done", function() {
+        $('.overlay-loading').fadeOut();
+    });
 
 });
 // Modal Behaviour
