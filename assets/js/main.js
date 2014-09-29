@@ -71,7 +71,7 @@ $(document).ready(function(){
     // start on pace start
     $('.overlay-loading').fadeIn();
     Pace.on("done", function() {
-        $('.overlay-loading').fadeOut();
+        $('.overlay-loading').delay(500).fadeOut("slow");
     });
 
 });

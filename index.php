@@ -7,7 +7,6 @@ if (false !== strpos($url,'logout')) {
 	header("Location: ../home/");
 }
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,6 +34,8 @@ if (false !== strpos($url,'logout')) {
 			}
 		?>
 	</div> <!-- end container -->
+
+	<div class="overlay-loading"><div class="overlay-loading-bg"></div></div>
 
 	<?php include "system/layout/overlay-page.php" ?>
 	<?php include "system/layout/footer.php"; ?>
