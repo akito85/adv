@@ -30,8 +30,18 @@
 
       <ul class="nav navbar-nav navbar-right">
         <?php if ($login->isUserLoggedIn() == true) { ?>
-          <li><a class="greetings" href="#"><p class="greetings-welcome">Welcome, </p><p class="greetings-acc-name"><?php echo $login->getUsername(); ?></p></a></li>
-          <li><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
+          <li class="dropdown xs-navbar-right">
+            <a class="greetings dropdown-toggle" data-toggle="dropdown" href="#">
+              <p class="greetings-welcome">Welcome, </p>
+              <p class="greetings-acc-name">
+                <?php echo $login->getUsername() . " "; ?><span class="caret"></span></p>
+            </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" id="edit-clicked">Edit Profile</a></li>
+                <li><a href="#" id="edit-password-clicked">Change Password</a></li>
+              </ul>
+          </li>
+          <li class="xs-navbar-right"><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
         <?php
               }
         ?>

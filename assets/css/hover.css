@@ -12,7 +12,6 @@
 .grid {
 	overflow: hidden;
 	margin: 0;
-	padding: 3em 0 0 0;
 	width: 100%;
 	max-width: 1920px;
 	list-style: none;
@@ -23,11 +22,8 @@
 .grid figure {
 	position: relative;
 	z-index: 1;
-	display: inline-block;
 	overflow: hidden;
-	margin: -0.135em;
-	width: 33.333%;
-	height: 400px;
+	height: auto;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -36,8 +32,8 @@
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
-	opacity: 0.8;
+	max-width: 100%;
+	height: auto !important;
 }
 
 .grid figure figcaption {
@@ -163,8 +159,8 @@ figure.effect-sadie figcaption::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: -webkit-linear-gradient(top, rgba(98,11,14,0) 0%, rgba(196,22,28,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(98,11,14,0) 0%, rgba(196,22,28,0.8) 75%);
 	content: '';
 	opacity: 0;
 	-webkit-transform: translate3d(0,50%,0);
@@ -976,9 +972,13 @@ figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
 	padding: 1em;
-	height: 3.75em;
-	background: #fff;
-	color: #3c4a50;
+	height: 3em;
+	color: #fff;
+  background-color: #000; 
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.1), rgba(255,255,255,.1)); 
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,.1), rgba(255,255,255,.1)); 
+  background-image: -o-linear-gradient(top, rgba(0,0,0,.1), rgba(255,255,255,.1)); 
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(255,255,255,.1));	
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
@@ -987,6 +987,7 @@ figure.effect-zoe figcaption {
 
 figure.effect-zoe h2 {
 	float: left;
+	font-size: 20px;
 }
 
 figure.effect-zoe figcaption > span {
@@ -995,16 +996,19 @@ figure.effect-zoe figcaption > span {
 
 figure.effect-zoe p {
 	position: absolute;
-	bottom: 8em;
+	bottom: 3em;
 	padding: 2em;
-	color: #fff;
+	color: #FFF;
 	text-transform: none;
-	font-size: 90%;
 	opacity: 0;
-	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+	transition: opacity 0.35s ease 0s;
+	background: linear-gradient(to bottom, rgba(98, 11, 14, 0) 0%, rgba(196, 22, 28, 0.8) 75%) repeat scroll 0% 0% transparent;
+	height: 100%;
+	font-size: 100%;
+	width: 100%;
+	left: 0;
+	height: auto;
 }
 
 figure.effect-zoe h2,
@@ -1129,6 +1133,7 @@ figure.effect-chico:hover p {
 	transform: scale(1);
 }
 
+/** temporarily disabled but i will learn this! 
 @media screen and (max-width: 69.5em) {
 	.grid figure {
 		width: 50%;
@@ -1138,11 +1143,12 @@ figure.effect-chico:hover p {
 		font-size: 90%;
 	}
 }
-
-
+**/
+/**
 @media screen and (max-width: 41.5em) {
 
 	.grid figure {
 		width: 100%;
 	}
 }
+**/
