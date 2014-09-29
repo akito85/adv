@@ -11,8 +11,6 @@
     <a class="sign-up-btn" href="javascript:void(0)">SIGN UP</a>
   </form>
 
-<!-- show registration form, but only if we didn't submit already -->
-<?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>  
   <form id="sign-up-form">
     <div class="logo-copy"></div>
     <br>
@@ -29,7 +27,6 @@
     <input placeholder="Password Confirmation" type="password" name="sign-up-password-confirmation" id="sign-up-password-confirmation" pattern="[\w+\d\s]{6,20}" autocomplete="off" required />
     <input type="submit" name="sign-up-submit" id="sign-up-submit" value="SIGN UP">
   </form>
-<?php } ?>
 
   <form id="edit-form">
     <div class="edit-error-message" id="edit-error-message"></div>
