@@ -531,6 +531,7 @@ video {
 }
 
 #the-map {
+    display: none;
     bottom: 0;
     height: 55%;
     left: 0;
