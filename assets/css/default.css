@@ -11,6 +11,17 @@
     src: url("../fonts/akko/Akko W01 Medium.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "AvianoFlareLight";
+    src: url("../fonts/aviano-flare/AvianoFlareLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AvianoFlareRegular";
+    src: url("../fonts/aviano-flare/AvianoFlareRegular.otf") format("opentype");
+}
+
+
 @media (max-width:767px){
     .navbar-nav {
         position: static !important;
@@ -421,22 +432,74 @@ video {
     font-family: "SteelfishRg";
     font-size: 24px;
 }
-.auto-de-vie {
-    background-image: url(../img/auto-de-vie.png);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 220px;
-    height: 22px;
-}
-.adv-box {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+/* about01 */
+.about01, .about03, .about12, .about13 {
+    display: block;
+    padding: 5em 7em 7em 7em;
+    background: #fff;
+    text-align: center;
 }
 
+.about14 {
+    display: block;
+    padding: 0 7em 7em 7em;
+    background: #fff;
+    text-align: center;    
+}
+
+    .title-head {
+        display: inline-block;
+        position: relative;
+        margin: 0 0.4em 0 0;
+        padding: 0;
+        font-size: 34px;
+        font-family: "AvianoFlareRegular";
+        letter-spacing: -1.5px;
+    }
+    .title-head::first-letter {
+        font-size: 40px ;
+        letter-spacing: -4px;
+    }
+    .content-tail {
+        margin: 3em 0 0 0;
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+
+    .about12 .title-head, .about14 .title-head {
+        margin:  0 0 0 0;
+        font-family: "SteelfishRg";
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    .about12 .title-head::first-letter, .about14 .title-head::first-letter {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    .about13 .content-tail {
+        margin: 1em 0 0 0;
+    }
+
+    .content-signature {
+        margin: 4em 0 7em 0;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .content-line {
+        width: 80%;
+        margin: auto;
+        background-color: #000;
+        height: 3px;
+    }
+
+    .
 /* old style will be selected and deleted later */
-
 #top-bar {
     background-color: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
