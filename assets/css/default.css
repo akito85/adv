@@ -140,7 +140,7 @@ video {
 .navbar, .navbar-brand { min-height: 160px; }
 .navbar-brand { padding: 0;}
 .navbar-nav {
-    top: 70px;
+    top: 65px; /*chrome*/
     margin-left: 10px;
     font-family: 'SteelfishRg';
     font-size: 28px;
@@ -160,6 +160,7 @@ video {
 }
 .navbar-nav > li > a {
     padding: 10px 20px;
+    line-height: 24px; /*chrome*/
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
