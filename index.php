@@ -29,6 +29,8 @@ if (false !== strpos($url,'logout')) {
 					break;
 				case "products": include "system/layout/products.php";
 					break;
+				case "artdevie": include "system/layout/gallery.php";
+					break;
 				case "my-cart": include "system/layout/my-cart.php";
 					break;
 			}

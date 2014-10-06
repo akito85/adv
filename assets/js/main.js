@@ -74,6 +74,18 @@ $(document).ready(function(){
         $('.overlay-loading').delay(500).fadeOut("slow");
     });
 
+    $("#gals").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+
+
 });
 // Modal Behaviour
 $('#modal-trigger-1').on('click', function(){

@@ -131,6 +131,7 @@ video {
 
 .send-to-back { z-index: 0 !important;}
 
+
 /** header and footer image brand **/
 .img-header-logo { margin: 50px 0 0 50px; width: 198px; min-height: 51px; }
 .img-footer-logo { margin: 70px 0 0 50px; width: 221px; min-height: 25px; }
