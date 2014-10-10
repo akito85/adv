@@ -974,9 +974,20 @@ figure.effect-sarah:hover p {
 figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
-	padding: 0.55em;
-	height: auto;
+	padding: 0.55em 0 0.55em 0;
+	height: 100%;
 	color: #fff;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+		background: rgba(0,0,0,0.6);
+}
+
+figure.effect-zoe h2 {
+	font-family: "SteelfishRg";
+	letter-spacing: 1px;
+
     background: rgb(98,11,14); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(98,11,14,1) 0%, rgba(196,22,28,1) 50%, rgba(98,11,14,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(98,11,14,1)), color-stop(50%,rgba(196,22,28,1)), color-stop(100%,rgba(98,11,14,1))); /* Chrome,Safari4+ */
@@ -987,15 +998,9 @@ figure.effect-zoe figcaption {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#620b0e', endColorstr='#620b0e',GradientType=0 ); /* IE6-9 */
     color: white !important;
     text-shadow: 1px 1px 1px black;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-}
 
-figure.effect-zoe h2 {
-	font-family: "SteelfishRg";
-	letter-spacing: 1px;
+  bottom: 0;
+  line-height: 40px;
 }
 
 figure.effect-zoe figcaption > span {
@@ -1011,7 +1016,6 @@ figure.effect-zoe p {
 	opacity: 0;
 	backface-visibility: hidden;
 	transition: opacity 0.35s ease 0s;
-	background: rgba(0,0,0,0.6);
 	font-size: 100%;
 	width: 100%;
 	left: 0px;
@@ -1036,31 +1040,19 @@ figure.effect-zoe figcaption > span::before {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-eye::before {
-	content: '\e000';
-}
-
-.icon-paper-clip::before {
-	content: '\e001';
-}
-
-.icon-heart::before {
-	content: '\e024';
-}
-
-figure.effect-zoe h2 {
-	display: inline-block;
-}
-
 figure.effect-zoe:hover p {
 	opacity: 1;
 }
 
 figure.effect-zoe:hover figcaption,
-figure.effect-zoe:hover h2,
 figure.effect-zoe:hover figcaption > span {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+	-webkit-transform: translate3d(0,330px,0);
+	transform: translate3d(0,330px,0);	
 }
 
 figure.effect-zoe:hover h2 {

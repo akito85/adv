@@ -10,7 +10,7 @@
         <li>
           <a href="#">
             <h1>Contact</h1>
-            <p>+62212958707</p>
+            <p>+622129586707</p>
           </a>
         </li>
         <li>
@@ -36,12 +36,12 @@
 
       <ul class="nav navbar-right adv-contact-right">
         <li>
-          <a href="javascript:void(0)">
+          <a href="https://facebook.com/autodevie">
             <img class="social-facebook" src="../assets/img/social/facebook.png" />
           </a>
         </li>
         <li>
-          <a href="javascript:void(0)">
+          <a href="https://instagram.com/autodevie">
             <img class="social-instagram" src="../assets/img/social/instagram.png" />
           </a>
         </li>
