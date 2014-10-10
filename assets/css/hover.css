@@ -75,8 +75,6 @@
 }
 
 .grid figure h2 {
-	word-spacing: -0.15em;
-	
 	font-weight: 300;
 }
 
@@ -976,7 +974,7 @@ figure.effect-sarah:hover p {
 figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
-	padding: 1em;
+	padding: 0.55em;
 	height: auto;
 	color: #fff;
     background: rgb(98,11,14); /* Old browsers */
@@ -997,7 +995,6 @@ figure.effect-zoe figcaption {
 
 figure.effect-zoe h2 {
 	font-family: "SteelfishRg";
-	font-size: 28px;
 	letter-spacing: 1px;
 }
 
@@ -1007,7 +1004,7 @@ figure.effect-zoe figcaption > span {
 
 figure.effect-zoe p {
 	position: absolute;
-	bottom: 4em;
+	bottom: 3.25em;
 	padding: 2em;
 	color: #FFF;
 	text-transform: none;

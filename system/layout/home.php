@@ -46,7 +46,7 @@
 			<img src="../assets/img/box-5.jpg" />
 			<figcaption>
 				<h2>Buy Now</h2>
-				<p>Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief </p>
+				<p>Product brief</p>
 				<a href="../products/">View more</a>
 			</figcaption>			
 		</figure>
