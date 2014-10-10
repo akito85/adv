@@ -15,11 +15,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="collapsed">
       <ul class="nav navbar-nav">
-        <li <?php if ($_REQUEST['id'] == "home"){echo "class='active'";} ?>><a class="right-line" href="../home/">Home</a></li>
-        <li <?php if ($_REQUEST['id'] == "about"){echo "class='active'";} ?>><a class="right-line" href="../about/">About Us</a></li>
-        <li <?php if ($_REQUEST['id'] == "autoshow"){echo "class='active'";} ?>><a class="right-line" href="../autoshow/">Autoshow</a></li>
-        <li <?php if ($_REQUEST['id'] == "products"){echo "class='active'";} ?>><a class="right-line" href="../products/">Products</a></li>
-        <li <?php if ($_REQUEST['id'] == "artdevie"){echo "class='active'";} ?>><a class="right-line" href="../artdevie/">Art De Vie</a></li>
+        <li <?php if ($_REQUEST['id'] == "home"){echo "class='active'";} ?>><a href="../home/">Home</a></li>
+        <li <?php if ($_REQUEST['id'] == "about"){echo "class='active'";} ?>><a href="../about/">About Us</a></li>
+        <li <?php if ($_REQUEST['id'] == "autoshow"){echo "class='active'";} ?>><a href="../autoshow/">Autoshow</a></li>
+        <li <?php if ($_REQUEST['id'] == "products"){echo "class='active'";} ?>><a href="../products/">Products</a></li>
+        <li <?php if ($_REQUEST['id'] == "artdevie"){echo "class='active'";} ?>><a href="../artdevie/">Art De Vie</a></li>
         <li>
           <?php if ($login->isUserLoggedIn() == true) { ?>
             <a style="margin-left: 16px" class="adv-red-btn" href="../logout/" id="logout-btn">Logout</a>

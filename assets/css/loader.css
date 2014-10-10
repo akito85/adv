@@ -75,6 +75,7 @@
   line-height: 80px;
   font-weight: bold;
   font-family:  "SteelfishRg";
+  letter-spacing: 3px;
 }
 
 .pace .pace-progress:after {

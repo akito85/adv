@@ -51,6 +51,20 @@
     .greetings-welcome {
         padding-left: 20px
     }
+    .navbar-nav > li, .right-line, .greetings-acc-name {
+        border: 0 !important;
+    }
+    .navbar-nav > li {
+        padding: 0.4em;
+    }
+    .navbar-nav > li:nth-child(5) {
+        height: 40px !important;   
+    }
+    .navbar-nav > li:last-child {
+        height: 40px;
+        top: 0;
+        padding-top: 0;
+    }
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -76,6 +90,20 @@
     .adv-contact-left, .adv-contact-right {
         clear: both !important;
     }
+    .navbar-nav > li, .right-line, .greetings-acc-name {
+        border: 0 !important;
+    }
+    .navbar-nav > li {
+        padding: 0.4em;
+    }
+    .navbar-nav > li:nth-child(5) {
+        height: 40px !important;
+    }
+    .navbar-nav > li:last-child {
+        height: 40px;
+        top: 0;
+        padding-top: 0;
+    }
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -99,7 +127,6 @@ div, input, a {
 
 body {
     background-color: #000;
-    box-sizing: border-box;
     font-family: "Akko W01 Light";
     overflow-x: hidden;
     width: 100%;
@@ -141,10 +168,10 @@ video {
 .navbar, .navbar-brand { min-height: 160px; }
 .navbar-brand { padding: 0;}
 .navbar-nav {
-    top: 65px; /*chrome*/
+    top: 80px; /*chrome*/
     margin-left: 10px;
     font-family: 'SteelfishRg';
-    font-size: 28px;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
     white-space: nowrap;
@@ -152,16 +179,37 @@ video {
 }
 
 /** navigation **/
+.navbar-nav > li {
+    border-right: 2px solid rgb(255, 255, 255);
+}
+.navbar-nav > li:nth-child(5) {
+    font-family: "AvianoFlareRegular";
+    letter-spacing: 0px;
+    font-size: 20px;
+    word-spacing: -1px;
+    text-transform: capitalize;
+    overflow: hidden;
+    height: 22px;
+}
+.navbar-nav > li:nth-child(5) > a {
+    padding-top: 3px;
+}
 .navbar-nav > li:last-child {
-    border-right: none;
+    border-right: 0;
+}
+.navbar-nav > li:last-child > a {
+    height: 40px;
+    top: -9px;
+    padding-top: 7px;
 }
 .navbar-nav > li.active > a {
     background-color: transparent !important;
     color: rgb(196, 22, 28) !important;
 }
 .navbar-nav > li > a {
-    padding: 10px 20px;
-    line-height: 24px; /*chrome*/
+    padding: 0 20px;
+    line-height: 22px; /*chrome*/
+    top: -2px;
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
@@ -172,8 +220,12 @@ video {
     background-color: transparent;
     transition: all 0.3s ease-out 0s;
 }
+
+.navbar-toggle {
+    top: 55px;
+}
+
 .right-line {
-    border-right: 2px solid rgb(255, 255, 255);
     color: rgb(255,255,255);
     height: 24px;
     margin-top: 10px;
@@ -192,6 +244,11 @@ video {
     color: white !important;
     text-shadow: 1px 1px 1px black;
 }
+
+.navbar-right > li:first-child {
+    border: 0;
+}
+
 .cart {
     display: inline-block !important;
     height: 22px;
@@ -235,15 +292,15 @@ video {
     letter-spacing: 0;
     color: #fff;
     padding: 0 0 0 0 !important;
-    margin-top: 14px;
+    margin-top: 9px;
 }
 
 .greetings-acc-name {
     font-family: "Akko W01 Medium";
     display: inline-block;
-    border-right: 1px solid white;
     padding: 0 10px 0 10px !important;
-    height: 15px;
+    height: 18px;
+    border-right: 2px solid #fff;
 }
 
 .greetings-welcome {
