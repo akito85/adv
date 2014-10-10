@@ -45,8 +45,8 @@
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-5.jpg" />
 			<figcaption>
-				<h2>View <span>More</span></h2>
-				<p>Product brief</p>
+				<h2>Buy Now</h2>
+				<p>Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief Product brief </p>
 				<a href="../products/">View more</a>
 			</figcaption>			
 		</figure>
@@ -54,7 +54,7 @@
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-6.jpg" />
 			<figcaption>
-				<h2>View <span>More</span></h2>
+				<h2>Buy Now</h2>
 				<p>Product brief</p>
 				<a href="../products/">View more</a>
 			</figcaption>			
@@ -69,7 +69,7 @@
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-2.jpg" />
 			<figcaption>
-				<h2>View <span>More</span></h2>
+				<h2>Buy Now</h2>
 				<p>Product brief</p>
 				<a href="../products/">View more</a>
 			</figcaption>			
@@ -78,7 +78,7 @@
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-3.jpg" />
 			<figcaption>
-				<h2>View <span>More</span></h2>
+				<h2>Buy Now</h2>
 				<p>Product brief</p>
 				<a href="../products/">View more</a>
 			</figcaption>			
@@ -87,7 +87,7 @@
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-4.jpg" />
 			<figcaption>
-				<h2>View <span>More</span></h2>
+				<h2>Buy Now</h2>
 				<p>Product brief</p>
 				<a href="../products/">View more</a>
 			</figcaption>			
@@ -96,7 +96,7 @@
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-1.jpg" />
 			<figcaption>
-				<h2>View <span>More</span></h2>
+				<h2>Buy Now</h2>
 				<p>Product brief</p>
 				<a href="../products/">View more</a>
 			</figcaption>			
