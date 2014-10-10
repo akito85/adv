@@ -55,15 +55,13 @@
         border: 0 !important;
     }
     .navbar-nav > li {
-        padding: 0.4em;
+        padding: 0.2em;
     }
     .navbar-nav > li:nth-child(5) {
         height: 40px !important;   
     }
     .navbar-nav > li:last-child {
         height: 40px;
-        top: 0;
-        padding-top: 0;
     }
 }
 
@@ -94,15 +92,13 @@
         border: 0 !important;
     }
     .navbar-nav > li {
-        padding: 0.4em;
+        padding: 0.2em;
     }
     .navbar-nav > li:nth-child(5) {
         height: 40px !important;
     }
     .navbar-nav > li:last-child {
         height: 40px;
-        top: 0;
-        padding-top: 0;
     }
 }
 

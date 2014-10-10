@@ -85,8 +85,12 @@ $(document).ready(function(){
     	}
     });
 
+    $(window).on('scroll', function(){
+    	$("#collapsed").removeClass("in");
+    });
 
 });
+
 // Modal Behaviour
 $('#modal-trigger-1').on('click', function(){
     $('#adv-modal-1').fadeIn();
