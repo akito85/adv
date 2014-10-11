@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // signup
   $("#sign-up-form").submit(function(event) {
-    $.post("register.php", $("#sign-up-form").serialize() + "&register=Register").done(function(data) {
+    $.post("../register.php", $("#sign-up-form").serialize() + "&register=Register").done(function(data) {
       //alert(data);
       $("#register-error-message").html(data);
       $("#register-error-message").delay(0).fadeIn('slow');

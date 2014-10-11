@@ -89,31 +89,31 @@ class Registration
         // TODO: check for "return true" case early, so put this first
         if (empty($user_name)) {
             $this->errors[] = MESSAGE_USERNAME_EMPTY;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (empty($user_password) || empty($user_password_repeat)) {
             $this->errors[] = MESSAGE_PASSWORD_EMPTY;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif ($user_password !== $user_password_repeat) {
             $this->errors[] = MESSAGE_PASSWORD_BAD_CONFIRM;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (strlen($user_password) < 6) {
             $this->errors[] = MESSAGE_PASSWORD_TOO_SHORT;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (strlen($user_name) > 64 || strlen($user_name) < 2) {
             $this->errors[] = MESSAGE_USERNAME_BAD_LENGTH;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (!preg_match('/^[a-z\d\s]{2,64}$/i', $user_name)) {
             $this->errors[] = MESSAGE_USERNAME_INVALID;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (empty($user_email)) {
             $this->errors[] = MESSAGE_EMAIL_EMPTY;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (strlen($user_email) > 64) {
             $this->errors[] = MESSAGE_EMAIL_TOO_LONG;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
         } elseif (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
             $this->errors[] = MESSAGE_EMAIL_INVALID;
-            var_dump($this->errors);
+            ///var_dump($this->errors);
 
         // finally if all the above checks are ok
         } else if ($this->databaseConnection()) {
@@ -161,7 +161,7 @@ class Registration
                     if ($this->sendVerificationEmail($user_id, $user_email, $user_activation_hash)) {
                         // when mail has been send successfully
                         $this->messages[] = MESSAGE_VERIFICATION_MAIL_SENT;
-                        var_dump($this->messages);
+                        ///var_dump($this->messages);
                         $this->registration_successful = true;
                     } else {
                         // delete this users account immediately, as we could not send a verification email
@@ -248,7 +248,7 @@ class Registration
                 //var_dump($this->messages);
             } else {
                 $this->errors[] = MESSAGE_REGISTRATION_ACTIVATION_NOT_SUCCESSFUL;
-                var_dump($this->errors);
+                //var_dump($this->errors);
             }
         }
     }

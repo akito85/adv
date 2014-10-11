@@ -24,5 +24,9 @@ require_once('system/login/classes/Registration.php');
 // so this single line handles the entire registration process.
 $registration = new Registration();
 
+if (isset($registration->errors[0]) || isset($registration->messages[0])) { 
+    echo $registration->errors[0];
+    echo $registration->messages[0];
+}
 // showing the register view (with the registration form, and messages/errors)
 //include("system/login/views/register.php");

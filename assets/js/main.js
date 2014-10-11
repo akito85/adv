@@ -17,6 +17,7 @@ $(document).ready(function(){
         $('#sign-in-form').fadeIn();
         $('body').addClass('no-scroll');
         $('.content').addClass('blur');
+				//$('.overlay-page').blurjs({ source: 'body', overlay: 'rgba(255,255,255,0.4)', radius: 10 });
     });
     $('.sign-up-btn').on('click', function(){
         $('nav').addClass('send-to-back');

@@ -742,9 +742,9 @@ video {
 .overlay-page #sign-in-form, .overlay-page #sign-up-form, #edit-form, #edit-password-form {
     bottom: 0;
     display: none;
-    height: 280px;
+    height: auto;
     left: 0;
-    margin: 160px auto auto;
+    margin: 50px auto auto;
     padding: 16px;
     position: absolute;
     right: 0;
@@ -767,7 +767,7 @@ video {
 }
 .overlay-page #sign-in-form input[type="submit"]:hover, .overlay-page #sign-up-form input[type="submit"]:hover, #edit-form input[type="submit"]:hover, #edit-password-form input[type="submit"]:hover {
     background-color: rgb(196, 22, 28);
-    color: #000;
+    color: #fff;
 }
 .overlay-page #sign-in-form p, .overlay-page #sign-up-form p {
     color: #fff;
@@ -784,8 +784,9 @@ video {
     width: 100%;
 }
 .overlay-page #sign-in-form .sign-up-btn:hover, .overlay-page #sign-up-form .sign-up-btn:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
 }
 #sidebar-btn {
     display: none;
