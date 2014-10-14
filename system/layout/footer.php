@@ -2,7 +2,7 @@
   <a href="javascript:void(0)" class="contact-btn adv-red-btn">
     Contact Us
   </a>
-  <div class="collapsed-footer">
+  <div class="collapsed-footer" style="display:block;">
     <div class="navbar-header">
       <a class="footer-brand" href="#"><img class="img-footer-logo" src="../assets/img/logo/footer-logo.png"/></a>
     </div>
@@ -34,7 +34,7 @@
       </ul>
 
 
-      <ul class="nav navbar-right adv-contact-right">
+      <ul class="nav adv-contact-right">
         <li>
           <a href="https://facebook.com/autodevie">
             <img class="social-facebook" src="../assets/img/social/facebook.png" />

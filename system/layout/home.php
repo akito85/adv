@@ -154,10 +154,10 @@
 			</video>
 		</div>
 		-->
-		<div class="col-lg-6 col-xs-6">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			<img class="img-responsive" src="../assets/img/Products1.jpg">
 		</div>
-		<div class="col-lg-6 col-xs-6">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			<img class="img-responsive" src="../assets/img/Products2.jpg">
 		</div>
 </div>
