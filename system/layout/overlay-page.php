@@ -19,7 +19,7 @@
     <input placeholder="Name" type="text" name="sign-up-name" id="sign-up-name" 
            oninvalid="this.setCustomValidity('Username cannot be empty, only letters and space allowed.')" 
            onchange="this.setCustomValidity('')" pattern="[a-zA-Z\s]{6,64}" required />
-    <input placeholder="Phone" type="text" name="sign-up-phone" id="sign-up-phone" pattern="[0-9]{6,20}" required />
+    <input placeholder="Phone" type="text" name="sign-up-phone" id="sign-up-phone" pattern="[0-9\+]{6,20}" required />
     <input placeholder="Email Address" type="email" name="sign-up-email" id="sign-up-email" autocomplete="off" required />
     <input placeholder="Password" type="password" name="sign-up-password" id="sign-up-password" 
            onchange="form.sing-up-password-confirmation.pattern = this.value;"

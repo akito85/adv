@@ -8,26 +8,26 @@
     </div>
       <ul class="nav adv-contact-left">
         <li>
-          <a href="#">
             <h1>Contact</h1>
+          <a href="javascript:void(0)">
             <p>+622129586707</p>
           </a>
         </li>
         <li>
-          <a href="mailto:inquiry@autodevie.com">
             <h1>E-Mail</h1>
+          <a href="mailto:inquiry@autodevie.com">
             <p>inquiry@autodevie.com</p>
           </a>
         </li>
         <li>
-          <a href="#" id="hq">
             <h1>Headquarters</h1>
+          <a href="javascript:void(0)" id="hq">
             <p>-6.225303, 106.659537</p>
           </a>
         </li>
         <li>
-          <a href="#">
             <h1>Line ID</h1>
+          <a href="javascript:void(0)">
             <p>autodevie</p>
           </a>
         </li>

@@ -19,9 +19,7 @@ $(document).ready(function(){
         $('.content').addClass('blur');
 				//$('.overlay-page').blurjs({ source: 'body', overlay: 'rgba(255,255,255,0.4)', radius: 10 });
     });
-    $('.sign-up-btn').on('click', function(){
-        $('nav').addClass('send-to-back');
-        $('.adv-footer').addClass('send-to-back');    	
+    $('.sign-up-btn').on('click', function(){	
         $('.overlay-page').fadeIn();
         $('#sign-in-form').fadeOut();
         $('#sign-up-form').fadeIn();

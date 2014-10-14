@@ -8,7 +8,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img class="img-header-logo" src="../assets/img/logo/header-logo.png"/></a>
+      <a class="navbar-brand" href="#">
+        <img class="img-header-logo highres" src="../assets/img/logo/header-logo.png"/>
+        <img class="img-footer-logo lowress" src="../assets/img/logo/footer-logo.png"/>
+      </a>
 
     </div>
 
