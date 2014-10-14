@@ -125,17 +125,19 @@
 				<a href="../products/">View more</a>
 			</figcaption>			
 		</figure>
-
+		<!--
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" poster="" preload='metadata' controls>
 				<source src="../assets/video/new/4.mp4" type="video/mp4">
 			</video>
 		</div>
+		-->
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" poster="" preload='metadata' controls>
 				<source src="../assets/video/new/3.mp4" type="video/mp4">
 			</video>
 		</div>
+		<!--
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" poster="" preload='metadata' controls>
 				<source src="../assets/video/new/2.mp4" type="video/mp4">
@@ -151,6 +153,7 @@
 				<source src="../assets/video/new/5.mp4" type="video/mp4">
 			</video>
 		</div>
+		-->
 		<div class="col-lg-6 col-xs-6">
 			<img class="img-responsive" src="../assets/img/Products1.jpg">
 		</div>

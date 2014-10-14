@@ -434,11 +434,17 @@ video {
     margin: 0 0 15px 0;
 }
 
-.adv-contact-left > li > a > h1 {
+.adv-contact-left > li {
+    border-right: 2px #fff solid;
+    height: 47px;       
+}
+
+.adv-contact-left > li > h1 {
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
     position: relative;
-    top: -4px;
+    top: -4px; 
+    color: white;
     font-family: "SteelfishRg";
     font-size: 28px;
     text-transform: uppercase;
@@ -453,11 +459,9 @@ video {
 }
 
 .adv-contact-left > li > a {
-    height: 47px;
     color: #fff;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    border-right: 2px #fff solid;
     text-decoration: none;
     outline: none;
 }
