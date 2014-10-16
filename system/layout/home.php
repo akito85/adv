@@ -1,5 +1,5 @@
 <div class="row grid">
-		<div class="col-lg-6 col-md-8F col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<div id="auto-slider" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">

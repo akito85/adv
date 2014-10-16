@@ -14,6 +14,7 @@ if (false !== strpos($url,'logout')) {
 	<?php include "system/layout/head.php"; ?>
 </head>
 <body>
+	<?php // include "system/layout/top-bar.php"; ?>
 	<?php include "system/layout/nav.php"; ?>
 	<div class="content container-fluid">
 		<?php

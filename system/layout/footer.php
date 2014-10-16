@@ -1,8 +1,8 @@
 <footer class="adv-footer">
-  <a href="javascript:void(0)" class="contact-btn adv-red-btn">
+  <div class="contact-btn adv-red-btn">
     Contact Us
-  </a>
-  <div class="collapsed-footer" style="display:block;">
+  </div>
+  <div class="collapsed-footer">
     <div class="navbar-header">
       <a class="footer-brand" href="#"><img class="img-footer-logo" src="../assets/img/logo/footer-logo.png"/></a>
     </div>
@@ -36,12 +36,12 @@
 
       <ul class="nav adv-contact-right">
         <li>
-          <a href="https://facebook.com/autodevie">
+          <a href="https://facebook.com/autodevie" target="_blank">
             <img class="social-facebook" src="../assets/img/social/facebook.png" />
           </a>
         </li>
         <li>
-          <a href="https://instagram.com/autodevie">
+          <a href="https://instagram.com/autodevie" target="_blank">
             <img class="social-instagram" src="../assets/img/social/instagram.png" />
           </a>
         </li>
