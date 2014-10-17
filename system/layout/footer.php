@@ -1,10 +1,10 @@
 <footer class="adv-footer">
-  <div class="contact-btn adv-red-btn">
+  <a href="javascript:void(0)" class="contact-btn adv-red-btn">
     Contact Us
-  </div>
+  </a>
   <div class="collapsed-footer row">
     <div class="navbar-header">
-      <a class="footer-brand" href="#"><img class="img-footer-logo" src="../assets/img/logo/footer-logo.png"/></a>
+      <a class="footer-brand" href="javascript:void(0)"><img class="img-footer-logo" src="../assets/img/logo/footer-logo.png"/></a>
     </div>
       <ul class="nav adv-contact-left">
         <li>

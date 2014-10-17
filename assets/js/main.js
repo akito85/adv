@@ -64,15 +64,10 @@ $(document).ready(function(){
 		});				
 
     // contact footer hover
-    $('.adv-footer').on('mouseenter', function () {
-    	$('.collapsed-footer').stop(true, true).fadeIn('slow');
-    	$('.adv-contact-right').stop(true, true).fadeIn('slow');
-    });
-    $('.adv-footer').on('mouseleave', function () {
-    	$('.collapsed-footer').stop(true, true).fadeOut('slow');
-    	$('.adv-contact-right').stop(true, true).fadeOut('slow');
-    });
-    $('.adv-footer').on('click', function () {$('.collapsed-footer').stop(true, true).fadeIn('slow')});
+    $('.adv-footer').on('mouseenter', function () {	$('.collapsed-footer').stop(true, true).fadeIn('slow'); });
+    $('.adv-footer').on('mouseleave', function () { $('.collapsed-footer').stop(true, true).fadeOut('slow');});
+
+    $('.adv-footer').click(function(){$('.collapsed-footer').toggle();});
 
     // start on pace start
     $('.overlay-loading').fadeIn();
