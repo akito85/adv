@@ -2,7 +2,7 @@
   <div class="contact-btn adv-red-btn">
     Contact Us
   </div>
-  <div class="collapsed-footer">
+  <div class="collapsed-footer row">
     <div class="navbar-header">
       <a class="footer-brand" href="#"><img class="img-footer-logo" src="../assets/img/logo/footer-logo.png"/></a>
     </div>
