@@ -497,6 +497,7 @@ video {
 
 .adv-contact-right {
     float: right;
+    display: none;
 }
 
 .adv-contact-right > li > a {
