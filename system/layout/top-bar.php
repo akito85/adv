@@ -6,30 +6,19 @@
 		?>
 	</div>
 	<div class="personal-info">
-		
-		<div class="account-btn">
-		<?php if ($login->isUserLoggedIn() == true) {
-							echo $login->getUsername(); ?> <a class="sign-in-btn" href="index.php?logout">Logout</a>
-		<?php
-						}
-					else {
-			?>
-			<a class="sign-in-btn" href="javascript:void(0)">Sign in</a>
-		<?php } ?>
-
-			<!--<a class="account-btn-menu" href="javascript:void(0)">Account &#9662;</a>-->
-		</div>
-		<div class="cart">
-			<a href="index.php?id=my-cart"><span class="badge">0</span><span class="icon-cart"></span>My Cart</a>
-		</div>
-	</div>
-	<div class="account-menu">
-		<ul>
-			<li><a class="sign-in-btn" href="javascript:void(0)">Sign in</a></li>
-			<li><a class="sign-up-btn" href="javascript:void(0)">Sign up</a></li>
-			<li><a href="#">Profile</a></li>
-			<li><a href="#">History</a></li>
-			<li><a href="#">Log out</a></li>
-		</ul>
-	</div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown xs-navbar-right">
+          <a class="greetings dropdown-toggle" data-toggle="dropdown" href="#">
+            <p class="greetings-welcome">Welcome, </p>
+            <p class="greetings-acc-name">
+              <?php echo $login->getUsername() . " "; ?><span class="caret"></span></p>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" id="edit-clicked">Edit Profile</a></li>
+              <li><a href="#" id="edit-password-clicked">Change Password</a></li>
+            </ul>
+        </li>
+        <li class="xs-navbar-right"><a class="cart" href="#"><span class="badge">3</span><span class="icon-cart"></span><p class="cart-text">My Cart</p></a></li>
+    </ul>
+  </div>
 </div>

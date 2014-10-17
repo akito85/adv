@@ -591,8 +591,6 @@ video {
         height: 3px;
     }
 
-    .
-/* old style will be selected and deleted later */
 #top-bar {
     background-color: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -603,7 +601,8 @@ video {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1030;
+    margin-bottom: 48px;
 }
 #top-bar .date {
     display: inline-block;
