@@ -1,4 +1,11 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<?php 
+  if ($login->isUserLoggedIn() == true) {
+    echo "<nav class='navbar navbar-inverse navbar-fixed-top add-margin-top' role='navigation'>";
+  }
+  else {
+    echo "<nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>";
+  }
+?>
   <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
   <div class="container-fluid">
     <div class="navbar-header">
