@@ -34,7 +34,7 @@
     <input placeholder="Name" type="text" name="edit-name" id="edit-name" 
            oninvalid="this.setCustomValidity('Username cannot be empty, only letters and space allowed.')" 
            onchange="this.setCustomValidity('')" pattern="[a-zA-Z\s]{6,64}" value="<?php echo $_SESSION['user_name'] ;?>" required />
-    <input placeholder="Phone" type="text" name="edit-phone" id="edit-phone" pattern="[0-9]{6,20}" value="<?php echo $_SESSION['user_phone'] ;?>" required />
+    <input placeholder="Phone" type="text" name="edit-phone" id="edit-phone" pattern="[0-9\+]{6,20}" value="<?php echo $_SESSION['user_phone'] ;?>" required />
     <input placeholder="Email Address" type="email" name="edit-email" id="edit-email" autocomplete="off" value="<?php echo $_SESSION['user_email'] ;?>" required />
     <input type="submit" name="edit-submit" id="edit-submit" value="UPDATE">
   </form>

@@ -8,7 +8,7 @@ $(document).ready(function(){
         $('#edit-form').fadeOut();
         $('#edit-password-form').fadeOut();
         $('body').removeClass('no-scroll');
-        $('.content').removeClass('blur');
+        $('#top-bar, .add-content-margin-top, .content, nav, .adv-footer').removeClass('blur');
     });
 
     $('#sign-in-btn').on('click', function(){ 	
@@ -16,15 +16,14 @@ $(document).ready(function(){
         $('#sign-up-form').fadeOut();
         $('#sign-in-form').fadeIn();
         $('body').addClass('no-scroll');
-        $('.content').addClass('blur');
-				//$('.overlay-page').blurjs({ source: 'body', overlay: 'rgba(255,255,255,0.4)', radius: 10 });
+        $('#top-bar, .add-content-margin-top, .content, nav, .adv-footer').addClass('blur');
     });
     $('.sign-up-btn').on('click', function(){	
         $('.overlay-page').fadeIn();
         $('#sign-in-form').fadeOut();
         $('#sign-up-form').fadeIn();
         $('body').addClass('no-scroll');
-        $('.content').addClass('blur');
+        $('#top-bar, .add-content-margin-top, .content, nav, .adv-footer').addClass('blur');
     });
 
     $('#hq').on('click', function(){  	
@@ -33,7 +32,7 @@ $(document).ready(function(){
         $('#sign-in-form').fadeOut();
         $('#the-map').fadeIn();
         $('body').addClass('no-scroll');
-        $('.content').addClass('blur');
+        $('#top-bar, .add-content-margin-top, .content, nav, .adv-footer').addClass('blur');
     });
 
     $('#edit-clicked').on('click', function(){ 	
@@ -43,7 +42,7 @@ $(document).ready(function(){
         $('#the-map').fadeOut();
         $('#edit-form').fadeIn();
         $('body').addClass('no-scroll');
-        $('.content').addClass('blur');
+        $('#top-bar, .add-content-margin-top, .content, nav, .adv-footer').addClass('blur');
     });
 
     $('#edit-password-clicked').on('click', function(){   	
@@ -54,7 +53,7 @@ $(document).ready(function(){
         $('#edit-form').fadeOut();
         $('#edit-password-form').fadeIn();
         $('body').addClass('no-scroll');
-        $('.content').addClass('blur');
+        $('#top-bar, .add-content-margin-top, .content, nav, .adv-footer').addClass('blur');
     });
 
 		$('.dropdown').hover(function() {

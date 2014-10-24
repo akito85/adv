@@ -3,7 +3,8 @@
 			<div id="auto-slider" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
-			    <li class="active" data-target="#auto-slider" data-slide-to="1"></li>
+			    <li class="active" data-target="#auto-slider" data-slide-to="0"></li>
+			    <li data-target="#auto-slider" data-slide-to="1"></li>
 			    <li data-target="#auto-slider" data-slide-to="2"></li>
 			    <li data-target="#auto-slider" data-slide-to="3"></li>
 			    <li data-target="#auto-slider" data-slide-to="4"></li>
@@ -11,7 +12,6 @@
 			    <li data-target="#auto-slider" data-slide-to="6"></li>
 			    <li data-target="#auto-slider" data-slide-to="7"></li>
 			    <li data-target="#auto-slider" data-slide-to="8"></li>
-			    <li data-target="#auto-slider" data-slide-to="9"></li>
 			  </ol>
 
 			  <!-- Wrapper for slides -->
@@ -87,13 +87,13 @@
 				<a href="../products/">View more</a>
 			</figcaption>			
 		</figure>
-
+		<!--
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" preload='metadata' controls>
 				<source src="../assets/video/adv_hybrid.mp4" type="video/mp4">
 			</video>
 		</div>
-
+		-->
 		<figure class="col-lg-3 col-md-4 col-sm-6 col-xs-6 effect-zoe">
 			<img src="../assets/img/box-2.jpg" />
 			<figcaption>
@@ -132,11 +132,13 @@
 			</video>
 		</div>
 		-->
+		<!--
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" poster="" preload='metadata' controls>
 				<source src="../assets/video/new/3.mp4" type="video/mp4">
 			</video>
 		</div>
+		-->
 		<!--
 		<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
 			<video class="img-responsive" poster="" preload='metadata' controls>

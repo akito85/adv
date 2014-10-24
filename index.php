@@ -20,7 +20,16 @@ if (false !== strpos($url,'logout')) {
 		}
 	?>
 	<?php include "system/layout/nav.php"; ?>
-	<div class="content container-fluid">
+
+	<?php
+		if ($login->isUserLoggedIn() == true) {
+			echo "<div class='add-content-margin-top container-fluid'>";
+			}
+		else {
+			echo "<div class='content container-fluid'>";
+		}
+	?>
+	
 		<?php
 			$id = $_REQUEST['id'];
 			switch($id) {

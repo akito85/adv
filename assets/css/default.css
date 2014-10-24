@@ -44,8 +44,13 @@
         height: 47px;
         width: 40%;
     }
-    .greetings-welcome {
-        padding-left: 20px
+    #top-bar {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        font-size: 12px !important;
+    }
+    .date {
+        display: none !important;
     }
     .navbar, .navbar-brand { min-height: 65px; }
     .navbar-nav {
@@ -71,6 +76,7 @@
     .content { margin-top: 65px; }
 
     .img-footer-logo { margin: 70px 0 0 30px; }
+    .add-content-margin-top { margin-top: 115px; }
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -120,6 +126,7 @@
     .content { margin-top: 65px; }
 
     .img-footer-logo { margin: 70px 0 0 30px; }
+    .add-content-margin-top { margin-top: 115px; }
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -143,6 +150,7 @@
         top: 0;
         margin: 58px 0 0 35px;
     }
+    .add-content-margin-top { margin-top: 208px; }
 }
 
 @media (min-width:1200px){
@@ -165,6 +173,7 @@
         top: 0;
         margin: 60px 0 0 35px;
     }
+    .add-content-margin-top { margin-top: 208px; }
 }
 
 div, input, a {
@@ -308,7 +317,8 @@ video {
 .cart {
     display: inline-block;
     height: 22px;
-    padding-top: 0px !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
     font-family: "Akko W01 Medium";
     font-size: 18px;
     text-transform: none;
@@ -328,12 +338,12 @@ video {
     background-size: 100%;
     background-position: center;
     position: relative;
-    top: -3px;
+    top: 0px;
 }
 .cart-text {
     display: inline-block;
     position: relative;
-    top: -10px;
+    top: -8px;
     margin: 0 0 0 15px;
     font-size: 18px;
     color: #555;
@@ -353,8 +363,6 @@ video {
     display: inline-block;
     padding: 0 10px 0 10px !important;
     margin-bottom: 0;
-    height: 18px;
-    border-right: 2px solid #555;
 }
 
 .greetings-welcome {
@@ -372,6 +380,7 @@ video {
     background-color: #fff; 
     color: #555;
     z-index: 1099;
+    left: 55px;
 }
 
 .dropdown-menu > li > a {
@@ -392,7 +401,7 @@ video {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     text-decoration: none;
-    color: #777;
+    color: #555;
     background: transparent;
     transition: all 0.3s ease 0s;
     border: 0;
@@ -411,7 +420,7 @@ video {
     border-radius: 50px;
     text-shadow: 1px 1px 1px black;
     position: relative;
-    top: -12px;
+    top: -9px;
     left: -5px;
 }
 
@@ -439,6 +448,7 @@ video {
 .collapsed-footer {
     display: none;
     min-height: 160px;
+    z-index: 1099;
 }
 
 .adv-footer-height {
@@ -785,7 +795,6 @@ video {
     width: 100%;
 }
 .overlay-page #sign-in-form, .overlay-page #sign-up-form, #edit-form, #edit-password-form {
-    bottom: 0;
     display: none;
     height: auto;
     left: 0;
@@ -1333,9 +1342,9 @@ html[xmlns] .flexslider .slides {
     text-decoration: underline;
 }
 .blur {
-  filter: blur(16px);
-  -webkit-filter: blur(16px);
-  -moz-filter: blur(16px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
   filter: url('../../assets/img/blur.svg#blur'); /* for Firefox */
 }
 .float-right {
@@ -1348,17 +1357,11 @@ html[xmlns] .flexslider .slides {
 /* register style */
 
 #register-error-message,
-#login-error-message {
+#login-error-message,
+#edit-error-message,
+#edit-password-error-message {
+    display: block;
+    padding: 10px;
+    text-align: center;
     color: white;
 }
-/*
-#sign-up-name:required:valid, 
-#sign-up-phone:required:valid {
-    color: green;
-}
-
-#sign-up-name:required:invalid,
-#sign-up-phone:required:invalid {
-    background: red;
-}
-*/
