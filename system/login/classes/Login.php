@@ -65,10 +65,15 @@ class Login
      */
     public function __construct()
     {
-        // create/read session
-        session_start();
+        // check session
+        $session_active = session_id();
+        if ($session_active = '') {
+            // create/read session
+            session_start();
+        }
+        
         session_save_path('tmp/');
-
+        
         // TODO: organize this stuff better and make the constructor very small
         // TODO: unite Login and Registration classes ?
 
