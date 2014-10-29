@@ -9,9 +9,7 @@
       <ul class="nav adv-contact-left">
         <li>
             <h1>Contact</h1>
-          <a href="javascript:void(0)">
-            <p>+622129586707</p>
-          </a>
+            <p>+6221 29586707</p>
         </li>
         <li>
             <h1>E-Mail</h1>
