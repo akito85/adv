@@ -17,7 +17,14 @@
 /**
  * put database config in general config 
  */
-include("config/db.php");
+$DB_CONF['main'] = "config/db.php";
+$DB_CONF['alts'] = "../config/db.php";
+
+if (file_exists($DB_CONF['main'])) {
+    include $DB_CONF['main'];
+  } else {
+    include $DB_CONF['alts'];
+}
 
 /**
  * Configuration for: Cookies
