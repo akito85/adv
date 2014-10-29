@@ -1,4 +1,5 @@
 <?php
+
 //lol this not gonna hurt!!
 require_once("login.php");
 
@@ -40,6 +41,8 @@ if (false !== strpos($url,'logout')) {
 				case "about": include "system/layout/about.php";
 					break;
 				case "autoshow": include "system/layout/autoshow.php";
+					break;
+				case "blog": include "system/layout/blog.php";
 					break;
 				case "products": include "system/layout/products.php";
 					break;
